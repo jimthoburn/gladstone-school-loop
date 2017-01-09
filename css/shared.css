@@ -75,6 +75,10 @@
     color: unset !important;
   }
 
+  *[style*="line-height"] {
+    line-height: unset !important;
+  }
+
   *[style*="font-family"] {
     font-family: unset !important;
   }
@@ -91,9 +95,12 @@
     font-size: unset !important;
   }
 
+  *[style*="width"] {
+    width: unset !important;
+  }
+
   #block_hub_left,
-  #block_hub_right,
-  *[style*="width"]:not(img) {
+  #block_hub_right {
     width: unset !important;
   }
 
