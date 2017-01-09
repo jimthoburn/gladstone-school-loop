@@ -70,39 +70,78 @@
     width: auto;
   }
 
-  p[style*="justify"] {
+  .publish_info {
+    font-size: unset !important;
+    color: unset !important;
+  }
+
+  *[style*="font-family"] {
+    font-family: unset !important;
+  }
+
+  *[style*="color"] {
+    color: unset !important;
+  }
+
+  *[style*="text-align"] {
     text-align: unset !important;
+  }
+
+  *[style*="font-size"] {
+    font-size: unset !important;
   }
 
   #block_hub_left,
   #block_hub_right,
-  div[style*="width"] {
+  *[style*="width"]:not(img) {
     width: unset !important;
   }
-  body .block_content_left h2,
-  body .block_content_right h2 {
-    background: transparent;
-    color: unset;
-    text-transform: unset;
-    font-weight: unset;
+
+  .block_content_left p,
+  .block_content_right p {
     font-size: unset;
-    border-width: 0;
-    padding: 0;
   }
 
+  /*
   @media (max-width: 970px) {
+  */
     body .content_margin_right > table,
     body .content_margin_right > table > tbody,
     body .content_margin_right > table > tbody > tr {
       display: inline
     }
+    body .content_margin_right > table > tbody > tr {
+      display: flex;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+    }
     body .content_margin_right > table > tbody > tr > td {
-      display: inline-block
+      display: inline-block;
+      flex-grow: 1;
     }
     body .content_margin_right > table > tbody > tr > td:first-child {
       width: auto;
       padding-right: 0;
     }
+  /*
+  }
+  */
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /*
+  #nav_page {
+    position: absolute;
+    right: 0;
+  }
+  */
+
+  #block_hub_main,
+  #block_hub_left .padding {
+    padding: unset;
   }
 
   body #container_page,
@@ -115,6 +154,15 @@
   }
   body #container_content {
     background: transparent;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+  @media (min-width: 60em) {
+    body #container_content {
+      background: transparent;
+      padding-left: 3em;
+      padding-right: 3em;
+    }
   }
   body #container_page,
   body .nav_public {
@@ -376,6 +424,8 @@
   body .content_full h3,
   body .block_content_main h2,
   body .block_content_main h3,
+  body .block_content_left h2,
+  body .block_content_right h2,
   body .nav_public a {
     font-family: inherit;
     color: rgb(42, 53, 56); /* @text-color */
@@ -393,7 +443,9 @@
   body .block_content_main h3 {
     font-family: "Roboto Slab", "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
   }
-  .block_content_main h2 {
+  .block_content_main h2,
+  body .block_content_left h2,
+  body .block_content_right h2 {
     background: transparent;
   }
 
@@ -408,8 +460,12 @@
   }
 
   body .content_full h2,
-  body .block_content_main h2 {
+  body .block_content_main h2,
+  body .block_content_left h2,
+  body .block_content_right h2 {
     font-size: 2em;
+    font-weight: 300;
+    font-family: "Roboto Slab", "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
     margin-top: 1em;
     margin-bottom: 0.5em;
 
@@ -657,15 +713,6 @@
     border-bottom-width: 0;
   }
 
-  @media (min-width: 60em) {
-    body #page_title,
-    body h1 {
-      font-size: 3em;
-      margin-top: 1em;
-      margin-bottom: 0.5em;
-    }
-  }
-
   body .content_margin_right #page_title {
     margin-left: 0;
     margin-right: 0;
@@ -690,10 +737,11 @@
 
   body #page_title,
   body h1 {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 2.5em;
     margin-top: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
   }
 
   body h2 {
