@@ -65,14 +65,21 @@
     display: inline-block;
   }
 
-  #block_hub_main {
+  #block_hub_main,
+  #block_hub_main_b,
+  #block_hub_right_b {
     float: none;
     width: auto;
+    padding: 0;
   }
 
   .publish_info {
     font-size: unset !important;
     color: unset !important;
+  }
+
+  *[style*="background-color"] {
+    background-color: unset !important;
   }
 
   *[style*="line-height"] {
@@ -95,8 +102,41 @@
     font-size: unset !important;
   }
 
-  *[style*="width"] {
+  *[style*="width"]:not(img) {
     width: unset !important;
+  }
+
+  .link_list a,
+  .link_list a:visited,
+  .link_list a:hover {
+    background: transparent;
+    color: unset;
+  }
+
+  .block_content_main a,
+  .block_content_main a:visited,
+  .block_content_main a:hover,
+  .block_content_right a,
+  .block_content_right a:visited,
+  .block_content_right a:hover,
+  .block_content_left a,
+  .block_content_left a:visited,
+  .block_content_left a:hover,
+  .link_list a,
+  .link_list a:visited,
+  .link_list a:hover {
+    color: rgb(249, 72, 72); /* --strawberry */
+  }
+
+  img[style*="86px"],
+  img[style*="92px"],
+  img[style*="95px"],
+  img[style*="96px"] {
+    width: 200px !important;
+    height: 200px !important;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
   }
 
   #block_hub_left,
@@ -130,6 +170,25 @@
       width: auto;
       padding-right: 0;
     }
+
+    body #container_content_home > table,
+    body #container_content_home > table > tbody,
+    body #container_content_home > table > tbody > tr {
+      display: inline
+    }
+    body #container_content_home > table > tbody > tr {
+      display: flex;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+    }
+    body #container_content_home > table > tbody > tr > td {
+      display: inline-block;
+      flex-grow: 1;
+    }
+    body #container_content_home > table > tbody > tr > td:first-child {
+      width: auto;
+      padding-right: 0;
+    }
   /*
   }
   */
@@ -153,19 +212,25 @@
 
   body #container_page,
   body #container_content,
+  body #container_content_home,
   body .block_content_main > div:first-child > div[style]:first-child {
     width: auto !important;
     /*
     max-width: 970px;
     */
   }
-  body #container_content {
+  body #container_content,
+  body #container_content_home {
     background: transparent;
     padding-left: 1.5em;
     padding-right: 1.5em;
+    max-width: 40em;
+    margin-left: auto;
+    margin-right: auto;
   }
   @media (min-width: 60em) {
-    body #container_content {
+    body #container_content,
+    body #container_content_home {
       background: transparent;
       padding-left: 3em;
       padding-right: 3em;
@@ -261,6 +326,7 @@
     height: auto;
     min-height: 32px;
     background: rgb(249, 72, 72); /* --strawberry */
+    color: white;
   }
 
   body .nav_public a,
@@ -298,6 +364,14 @@
     color: rgba(0, 0, 0, 0.9);
     text-decoration: underline;
     height: auto;
+  }
+  body .nav_public a,
+  body .nav_public .selected a,
+  body .nav_public a:visited,
+  body .nav_public a:hover,
+  body .nav_public a:active,
+  body .nav_public a:focus {
+    color: white !important;
   }
   body .footer_nav_sl {
     clear: both;
@@ -418,7 +492,8 @@
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
-    color: inherit;
+    color: rgb(249, 72, 72); /* --strawberry */
+    text-decoration: underline;
   }
 
   body #block_standard_left {
@@ -549,7 +624,8 @@
     transition: background-color 0.2s;
     margin-right: 0.1em;
   }
-  body .search_btn {
+  body .search_btn,
+  body .search_btn:hover {
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
