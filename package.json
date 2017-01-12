@@ -1,0 +1,16 @@
+{
+  "main": "index.js",
+  "dependencies": {
+    "jsdom": "^9.9.1"
+  },
+  "devDependencies": {},
+  "license": "UNLICENSED",
+  "private": true,
+  "name": "git-school-loop",
+  "description": "This is a design prototype for the Gladstone High School website. You can view the site here: http://gladstonehighschool.jimthoburn.com",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": ""
+}

@@ -1,0 +1,11 @@
+---
+title: Gladstone High School
+timezone: America/Los_Angeles
+permalink: pretty
+exclude:
+- CNAME
+- README.md
+- package.json
+- node_modules
+source:
+  source
