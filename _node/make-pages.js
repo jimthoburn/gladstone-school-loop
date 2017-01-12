@@ -42,10 +42,14 @@ function makePages(pagesData) {
 
           var fileName = (page.url == '/') ? '/index' : page.url;
 
-          fs.writeFile('../' + fileName.replace('?', '-') + '.html', serializeDocument(window.document), 'utf8', (err) => {
-              if (err) {
-                  console.log(err);
-              }
+var jekyllFrontMatter = `---
+layout: null
+---
+`;
+          fs.writeFile('../' + fileName.replace('?', '-') + '.html', jekyllFrontMatter + serializeDocument(window.document), 'utf8', (err) => {
+            if (err) {
+              console.log(err);
+            }
           });
         }
       );
