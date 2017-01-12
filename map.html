@@ -89,13 +89,16 @@ layout: null
         </header>
 
         <section>
+          {% for section in site.data['pages'] %}
           <section>
+            <h2>{{ section.title }}</h2>
             <ul>
-            {% for page in site.data['pages'] %}
+            {% for page in section.pages %}
               <li><a href="{{ page.url | replace: '?','-' }}">{{ page.title }}</a></li>
             {% endfor %}
             </ul>
           </section>
+          {% endfor %}
         </section>
 
       </div>
