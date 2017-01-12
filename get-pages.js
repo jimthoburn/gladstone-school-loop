@@ -21,7 +21,7 @@ jsdom.env(
         title: links[index].textContent
       });
     }
-    fs.writeFile('source/_data/pages.json', JSON.stringify(pages), 'utf8', (err) => {
+    fs.writeFile('_data/pages.json', JSON.stringify(pages), 'utf8', (err) => {
       if (err) {
         console.log(err);
       }

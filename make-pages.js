@@ -25,7 +25,7 @@ var jsdom = require("jsdom");
 var serializeDocument = require("jsdom").serializeDocument;
 
 function init() {
-  var filePath = path.join(__dirname, 'source/_data/pages.json');
+  var filePath = path.join(__dirname, '_data/pages.json');
 
   fs.readFile(filePath, {encoding: 'utf-8'}, function(err,data){
     if (!err) {
@@ -60,21 +60,13 @@ function makePages(pagesData) {
 
         replaceLogoHTML(document, LOGO_HTML);
 
-        var folder = 'source';
-
-        var fileName = page.url == '/' ? '/index' : page.url;
+        var fileName = (page.url == '/') ? '/index' : page.url;
 
         console.log('fileName: ' + fileName);
 
-        ensureExists(__dirname + '/' + folder, 0744, function(err) {
+        fs.writeFile('.' + fileName.replace('?', '-') + '.html', serializeDocument(window.document), 'utf8', (err) => {
             if (err) {
-              // handle folder creation error
-            } else {
-                fs.writeFile(folder + fileName.replace('?', '-') + '.html', serializeDocument(window.document), 'utf8', (err) => {
-                    if (err) {
-                        console.log(err);
-                    }
-                });
+                console.log(err);
             }
         });
       }
@@ -130,20 +122,6 @@ function updateNavigation(document) {
   updateHREF(elements[2], '/administration');
   updateHREF(elements[3], '/guidance');
   updateHREF(elements[4], '/activities');
-}
-
-// KUDOS: http://stackoverflow.com/questions/21194934/node-how-to-create-a-directory-if-doesnt-exist#answer-21196961
-function ensureExists(path, mask, cb) {
-    if (typeof mask == 'function') { // allow the `mask` parameter to be optional
-        cb = mask;
-        mask = 0777;
-    }
-    fs.mkdir(path, mask, function(err) {
-        if (err) {
-            if (err.code == 'EEXIST') cb(null); // ignore the error if the folder already exists
-            else cb(err); // something else went wrong
-        } else cb(null); // successfully created folder
-    });
 }
 
 init();
