@@ -1,9 +1,18 @@
 {
   "main": "index.js",
-  "dependencies": {
-    "jsdom": "^9.9.1"
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^6.6.0",
+    "browser-sync": "^2.18.5",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sourcemaps": "^1.9.1",
+    "jsdom": "^9.9.1",
+    "postcss-calc": "^5.3.1",
+    "postcss-custom-properties": "^5.0.1",
+    "postcss-import": "^9.0.0",
+    "livereload-js": "^2.2.2"
   },
-  "devDependencies": {},
   "license": "UNLICENSED",
   "private": true,
   "name": "git-school-loop",

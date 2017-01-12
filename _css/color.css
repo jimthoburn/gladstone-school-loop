@@ -1,0 +1,66 @@
+
+
+  /* =Color
+  ----------------------------------------------- */
+  :root {
+    /*
+    --cherry: rgb(209, 36, 42);
+    --light-cherry: rgb(209, 126, 132);
+    --peach: rgb(241, 95, 91);
+    --darker-strawberry: rgb(145, 36, 38);
+    --dark-strawberry: rgb(201, 37, 43);
+    --watermelon: rgb(223, 7, 1);
+    */
+    /*
+    --black: rgb(66, 68, 71);
+    --black: rgb(148, 150, 153);
+    --black: rgb(248, 250, 253);
+    --black: rgb(149, 150, 152);
+    */
+
+    --strawberry: rgb(249, 72, 72);
+    --strawberry: rgb(226, 30, 39);
+    --strawberry: rgb(238, 51, 56);
+    --tungsten: rgb(40, 41, 43);
+  }
+
+  :root {
+    --text-color: var(--tungsten);
+    --link-color: var(--strawberry);
+    --button-color: var(--strawberry);
+    --headline-color: var(--strawberry);
+  }
+
+  body {
+    /*
+    background-color: rgba(209, 36, 42, 0.025);
+    background-color: rgb(255, 254, 254);
+    background-color: rgb(238, 239, 241);
+    */
+    background-color: rgb(253, 251, 250);
+    color: var(--text-color);
+  }
+
+  a {
+    color: var(--link-color);
+  }
+
+  main h1,
+  main h2 {
+    color: var(--headline-color);
+  }
+  dt {
+    color: var(--headline-color);
+  }
+  body > nav,
+  body > footer {
+    background-color: rgb(3, 2, 1);
+    background-color: rgb(165, 30, 34);
+    background-color: rgb(148, 150, 153);
+    background-color: rgb(98, 100, 103);
+    color: rgba(255, 255, 255, 0.9);
+    background-color: var(--strawberry);
+  }
+  body > nav button {
+    background-color: rgba(0, 0, 0, 0.3);
+  }

@@ -9,7 +9,7 @@ var jsdom = require("jsdom");
 var serializeDocument = require("jsdom").serializeDocument;
 
 function init() {
-  var filePath = path.join(__dirname, '_data/pages.json');
+  var filePath = path.join(__dirname, '../_data/pages.json');
 
   fs.readFile(filePath, {encoding: 'utf-8'}, function(err,data){
     if (!err) {
@@ -42,7 +42,7 @@ function makePages(pagesData) {
 
           var fileName = (page.url == '/') ? '/index' : page.url;
 
-          fs.writeFile('.' + fileName.replace('?', '-') + '.html', serializeDocument(window.document), 'utf8', (err) => {
+          fs.writeFile('../' + fileName.replace('?', '-') + '.html', serializeDocument(window.document), 'utf8', (err) => {
               if (err) {
                   console.log(err);
               }
