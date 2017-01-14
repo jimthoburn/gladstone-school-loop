@@ -33,7 +33,8 @@ function makePages(pagesData) {
 
           makeAbsolute(document, 'src');
           updateNavigation(document, pagesData);
-          replaceQueryString(document, 'href')
+          replaceQueryString(document, 'href');
+          removeReturnURLs(document, 'href');
           //makeAbsolute(document, 'href');
 
           addHeadHTML(document, OPTIONS.HEAD_ELEMENT_HTML);
@@ -41,6 +42,12 @@ function makePages(pagesData) {
           replaceFooterHTML(document, OPTIONS.FOOTER_HTML);
           markEmptyParagraphs(document);
           //removeNbsp(document);
+
+          var page_generation_id = document.querySelector('meta[name="page_generation_id"]');
+          if (page_generation_id) page_generation_id.parentNode.removeChild(page_generation_id);
+
+          var statsElement = document.querySelector('img[src*="/stats/"]');
+          if (statsElement) statsElement.parentNode.removeChild(statsElement);
 
           var fileName = (page.url == '/') ? '/index' : page.url;
 
@@ -76,8 +83,20 @@ function replaceQueryString(document, attribute) {
   for (var index = 0; index < elements.length; index++) {
     (function(element) {
       var attributeValue = element.getAttribute(attribute);
-      if (attributeValue.indexOf('?') > 0) {
+      if (attributeValue.indexOf('?') > 0 && attributeValue.indexOf('/portal') < 0 && attributeValue.indexOf('/') === 0) {
         element.setAttribute(attribute, attributeValue.replace('?', '-'));
+      }
+    })(elements[index]);
+  }
+}
+
+function removeReturnURLs(document, attribute) {
+  var elements = document.querySelectorAll('*[' + attribute + ']');
+  for (var index = 0; index < elements.length; index++) {
+    (function(element) {
+      var attributeValue = element.getAttribute(attribute);
+      if (attributeValue.indexOf('return_url') > 0) {
+        element.setAttribute(attribute, attributeValue.replace(/&return_url=[^&]*/g, ''));
       }
     })(elements[index]);
   }
@@ -100,10 +119,14 @@ function replaceFooterHTML(document, html) {
   var footer_table = document.querySelector('.footer_table');
   if (footer_table) footer_table.parentNode.removeChild(footer_table);
 
-  var element = document.createElement('div');
-  element.className = 'footer_footnote';
-  element.innerHTML = html;
-  document.body.appendChild(element);
+  var footer_footnote = document.querySelector('.footer_footnote');
+  if (!footer_footnote) {
+    footer_footnote = document.createElement('div');
+    footer_footnote.className = 'footer_footnote';
+    document.body.appendChild(footer_footnote);
+  }
+
+  footer_footnote.innerHTML = html;
 }
 
 function updateHREF(element, value) {

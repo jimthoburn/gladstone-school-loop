@@ -89,6 +89,7 @@
   }
 
   body #block_wide_main {
+    float: none;
     width: auto !important;
   }
 
@@ -1436,6 +1437,10 @@
     position: absolute;
     bottom: 0;
     left: 0;
+  }
+
+  iframe {
+    width: auto;
   }
 
 /*# sourceMappingURL=shared.css.map */
