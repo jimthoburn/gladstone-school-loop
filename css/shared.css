@@ -259,8 +259,6 @@
       -webkit-box-direction: reverse;
           -ms-flex-direction: column-reverse;
               flex-direction: column-reverse;
-      -ms-flex-direction: column;
-          flex-direction: column;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
     }
@@ -296,8 +294,6 @@
       -webkit-box-direction: reverse;
           -ms-flex-direction: column-reverse;
               flex-direction: column-reverse;
-      -ms-flex-direction: column;
-          flex-direction: column;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
     }
@@ -1444,7 +1440,7 @@
   }
 
   iframe {
-    width: auto;
+    width: 100%;
   }
 
 /*# sourceMappingURL=shared.css.map */
