@@ -156,8 +156,7 @@
   img[style*="151px"],
   img[style*="174px"],
   img[style*="200px"],
-  img[style*="201px"],
-  img[style*="100%"] {
+  img[style*="201px"] {
     width: 200px !important;
     height: 200px !important;
     border-width: 0 !important;
@@ -608,6 +607,7 @@
   }
 
   .content01 .publish_content,
+  .content03 .publish_content,
   .block_content_right .publish_content {
     font-size: unset;
     font-family: unset;
@@ -617,6 +617,10 @@
   }
 
   .link_list h2,
+  .content01 h2,
+  .content02 h2,
+  .container02_middle h2,
+  .container04_middle h2,
   body #page_title,
   body .content_full h2,
   body .content_full h3,
@@ -667,6 +671,10 @@
   #nav_page .label,
   body #nav_page .title,
   body .content_full h2,
+  .content01 h2,
+  .content02 h2,
+  .container02_middle h2,
+  .container04_middle h2,
   body .block_content_main h2,
   body .block_content_left h2,
   body .block_content_right h2 {

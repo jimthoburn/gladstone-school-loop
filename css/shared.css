@@ -200,18 +200,29 @@
     color: rgb(238, 51, 56);
   }
 
+  img[title="16.jpg"],
+  img[style*="68px"],
+  img[style*="73px"],
+  img[style*="75px"],
+  img[style*="76px"],
+  img[style*="79px"],
+  img[style*="82px"],
   img[style*="86px"],
   img[style*="92px"],
+  img[style*="94px"],
   img[style*="95px"],
   img[style*="96px"],
+  img[style*="100px"],
   img[style*="125px"],
   img[style*="126px"],
   img[style*="150px"],
   img[style*="151px"],
+  img[style*="174px"],
   img[style*="200px"],
   img[style*="201px"] {
     width: 200px !important;
     height: 200px !important;
+    border-width: 0 !important;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: center;
@@ -369,6 +380,7 @@
   body #container_home_header {
     padding-top: 0.75em;
     background: transparent;
+    color: rgb(40, 41, 43);
     /*
     background: rgb(55, 54, 30);
     color: white;
@@ -394,7 +406,8 @@
     height: 4.5em;
     width: auto;
     vertical-align: middle;
-    display: block
+    display: block;
+    margin-bottom: 0.375em;
   }
 
   body #container_header a,
@@ -640,6 +653,7 @@
   }
 
   .link_list h2,
+  #nav_page .label,
   body #nav_page .title {
     background-color: transparent;
     font-family: inherit;
@@ -647,8 +661,11 @@
     font-weight: inherit;
     color: inherit;
     border-width: 0;
+    text-transform: unset;
   }
 
+  body #nav_page .page_button_2 a,
+  body #nav_page .page_button_2 a:hover,
   body #nav_page .page_button a,
   body #nav_page .page_button a:hover {
     background-color: transparent;
@@ -684,6 +701,7 @@
   .alert01 p,
   .link_list p,
   .link_list2 li,
+  body #nav_page .page_button_2,
   body #nav_page .page_button,
   .block_text > ul > li {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -717,6 +735,7 @@
     float: none;
   }
 
+  .content01 .publish_content,
   .block_content_right .publish_content {
     font-size: unset;
     font-family: unset;
@@ -726,6 +745,7 @@
   }
 
   .link_list h2,
+  .content02 h2,
   body #page_title,
   body .content_full h2,
   body .content_full h3,
@@ -776,8 +796,10 @@
   }
 
   .link_list h2,
+  #nav_page .label,
   body #nav_page .title,
   body .content_full h2,
+  .content02 h2,
   body .block_content_main h2,
   body .block_content_left h2,
   body .block_content_right h2 {
@@ -1387,6 +1409,10 @@
     border-width: 0;
     padding: 0;
     margin: 0;
+  }
+
+  .container03_middle {
+    background: transparent;
   }
 
   .container04_middle {
