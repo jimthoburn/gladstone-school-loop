@@ -19,6 +19,23 @@ exports.LOGO_HTML = `
 <p>Home of the Mighty Gladiators</p>
 `;
 
+exports.FOOTER_HTML = `
+<div class="contact">
+  <div>
+    <h2>Gladstone High School</h2>
+    <p>1340 North Enid Avenue<br />Covina, CA 91722</p>
+    <p>626-815-3600</p>
+  </div>
+  <p><strong>Chris Silvas, Principal</strong><br /><a href="mailto:csilvas@azusa.org">csilvas@azusa.org</a></p>
+  <p><strong>JoAnn Gomez, School Secretary</strong><br /><a href="mailto:jgomez@azusa.org">jgomez@azusa.org</a></p>
+</div>
+
+<div class="legal">
+  <h2><a href="http://azusa.org"><img src="/images/azusa-district.png" width="100" height="100" alt="Azusa Unified School District" /></a></h2>
+  <p>The District prohibits, at any district school or school activity, unlawful discrimination, harassment, intimidation, and bullying of any student based on the student’s actual race, color, ancestry, national origin, ethnic group, identication, age, religion, marital or parental status, physical or mental disability, sex, sexual orientation, gender, gender identity, or gender expression; the perception of one or more of such characteristics; or association with a person or group with one or more these actual or perceived characteristics.</p>
+</div>
+`;
+
 exports.SITE_MAP_URL = 'http://ghs-ausd-ca.schoolloop.com/portal/site_map?d=x';
 
 exports.SECTIONS_DATA = [{

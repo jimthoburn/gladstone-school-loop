@@ -29,6 +29,8 @@
     --link-color: var(--strawberry);
     --button-color: var(--strawberry);
     --headline-color: var(--strawberry);
+    --nav-background-color: var(--strawberry);
+    --nav-color: rgba(255, 255, 255, 0.9);
   }
 
   body {

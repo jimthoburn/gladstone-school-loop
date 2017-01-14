@@ -37,8 +37,10 @@ function makePages(pagesData) {
           //makeAbsolute(document, 'href');
 
           addHeadHTML(document, OPTIONS.HEAD_ELEMENT_HTML);
-
           replaceLogoHTML(document, OPTIONS.LOGO_HTML);
+          replaceFooterHTML(document, OPTIONS.FOOTER_HTML);
+          markEmptyParagraphs(document);
+          //removeNbsp(document);
 
           var fileName = (page.url == '/') ? '/index' : page.url;
 
@@ -94,6 +96,16 @@ function replaceLogoHTML(document, html) {
   }
 }
 
+function replaceFooterHTML(document, html) {
+  var footer_table = document.querySelector('.footer_table');
+  if (footer_table) footer_table.parentNode.removeChild(footer_table);
+
+  var element = document.createElement('div');
+  element.className = 'footer_footnote';
+  element.innerHTML = html;
+  document.body.appendChild(element);
+}
+
 function updateHREF(element, value) {
   element.setAttribute('href', value);
 }
@@ -103,6 +115,29 @@ function updateNavigation(document, pagesData) {
   for (var index = 0; index < elements.length; index++) {
     elements[index].setAttribute('href', pagesData[index].pages[0].url);
   }
+}
+
+// KUDOS: http://stackoverflow.com/questions/13380906/hiding-an-element-that-contains-only-spaces-using-css#answer-13381114
+function markEmptyParagraphs(document) {
+  var allParas = document.getElementsByTagName('p');
+  for(var i=0;i<allParas.length;i++){
+    if(allParas[i].getElementsByTagName('*').length == 0 && (allParas[i].innerHTML == '' || allParas[i].innerHTML == ' ' || allParas[i].innerHTML == '&nbsp;')){
+      allParas[i].className += ' is-empty';
+    }
+  }
+}
+
+// http://stackoverflow.com/questions/19549524/removing-non-break-spaces-in-javascript#answer-19549773
+function removeNbsp(element) {
+  var child = element.firstChild;
+  if (!child) return;
+  do {
+    if (child.nodeType === 3) {
+      child.nodeValue = child.nodeValue.replace(/\u00A0/g, '');
+    } else {
+      removeNbsp(child);
+    }
+  } while (child = child.nextSibling);
 }
 
 init();
