@@ -29,7 +29,7 @@
     --link-color: var(--strawberry);
     --button-color: var(--strawberry);
     --headline-color: var(--strawberry);
-    --nav-background-color: var(--strawberry);
+    --nav-background-color: black;
     --nav-color: rgba(255, 255, 255, 0.9);
   }
 
@@ -43,6 +43,7 @@
     color: var(--text-color);
   }
 
+  /*
   a {
     color: var(--link-color);
   }
@@ -65,4 +66,14 @@
   }
   body > nav button {
     background-color: rgba(0, 0, 0, 0.3);
+  }
+  */
+
+  body #container_header,
+  body #container_home_header {
+    background-color: rgb(215, 1, 0);
+    background-image: url(/images/texture-shape.png), url(/images/texture-shape.png);
+    background-position: center;
+    background-size: cover, 160% auto;
+    color: white;
   }

@@ -51,11 +51,14 @@ function makePages(pagesData) {
 
           var fileName = (page.url == '/') ? '/index' : page.url;
 
+          var serializedDocument = serializeDocument(document);
+          serializedDocument = makeBackgroundImageURLsAbsolute(serializedDocument);
+
 var jekyllFrontMatter = `---
 layout: null
 ---
 `;
-          fs.writeFile('../' + fileName.replace('?', '-') + '.html', jekyllFrontMatter + serializeDocument(window.document), 'utf8', (err) => {
+          fs.writeFile('../' + fileName.replace('?', '-') + '.html', jekyllFrontMatter + serializedDocument, 'utf8', (err) => {
             if (err) {
               console.log(err);
             }
@@ -148,6 +151,10 @@ function markEmptyParagraphs(document) {
       allParas[i].className += ' is-empty';
     }
   }
+}
+
+function makeBackgroundImageURLsAbsolute(serializedDocument) {
+  return serializedDocument.replace(/url\(\/simg/g, `url(${ OPTIONS.BASE_URL }/simg`);
 }
 
 // http://stackoverflow.com/questions/19549524/removing-non-break-spaces-in-javascript#answer-19549773
