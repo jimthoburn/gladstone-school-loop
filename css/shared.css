@@ -57,6 +57,7 @@
   }
   */
 
+  /*
   body #container_header,
   body #container_home_header {
     background-color: rgb(215, 1, 0);
@@ -65,6 +66,7 @@
     background-size: cover, 160% auto;
     color: white;
   }
+  */
 
   /*
   @import url(shim.css);
@@ -169,7 +171,9 @@
 
   #page_title,
   .link_list h2,
+  .content01 h2,
   .content02 h2,
+  .content03 h2,
   .block_content_main h2,
   .block_content_left h2,
   .block_content_right h2 {
@@ -266,7 +270,7 @@
 
   .nav_public {
     background-image: none;
-    border-color: black;
+    border-color: rgb(215, 1, 0);
   }
 
   .footer_footnote {
@@ -295,7 +299,7 @@
   .nav_public {
     height: auto;
     min-height: 32px;
-    background: black;
+    background: rgb(215, 1, 0);
     color: rgba(255, 255, 255, 0.9);
   }
 
@@ -411,6 +415,21 @@
     -webkit-transition: background-color 0.2s;
     transition: background-color 0.2s;
     box-sizing: border-box;
+  }
+
+  table[style*="width"] {
+    width: 100% !important;
+  }
+
+  table[style*="width"] #block_hub_main {
+    width: 64.58333333%; /* 465px / 720px */
+    width: auto;
+    float: none;
+  }
+
+  table[style*="width"] #block_hub_main div[style*="width"] {
+    width: 64.58333333% !important; /* 465px / 720px */
+    width: auto !important;
   }
 
   table[cellpadding] {

@@ -104,7 +104,9 @@
 
   #page_title,
   .link_list h2,
+  .content01 h2,
   .content02 h2,
+  .content03 h2,
   .block_content_main h2,
   .block_content_left h2,
   .block_content_right h2 {
@@ -319,6 +321,19 @@
     cursor: pointer;
     transition: background-color 0.2s;
     box-sizing: border-box;
+  }
+
+  table[style*="width"] {
+    width: 100% !important;
+  }
+  table[style*="width"] #block_hub_main {
+    width: 64.58333333%; /* 465px / 720px */
+    width: auto;
+    float: none;
+  }
+  table[style*="width"] #block_hub_main div[style*="width"] {
+    width: 64.58333333% !important; /* 465px / 720px */
+    width: auto !important;
   }
 
   table[cellpadding] {
