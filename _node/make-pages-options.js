@@ -12,13 +12,11 @@ exports.HEAD_ELEMENT_HTML = `
 `;
 
 exports.LOGO_HTML = `
-<h2>
-    <a href="/">
-        <img src="/images/gladstone.png" width="150" alt="" />
-        Gladstone High School
-    </a>
-</h2>
-<p>Home of the Mighty Gladiators</p>
+<a href="/">
+  <img src="/images/gladstone.png" width="150" alt="" />
+  <h2>Gladstone High School</h2>
+  <p>Home of the Mighty Gladiators</p>
+</a>
 `;
 
 exports.FOOTER_HTML = `
