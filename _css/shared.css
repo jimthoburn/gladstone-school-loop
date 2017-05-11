@@ -178,11 +178,13 @@
     line-height: 1.5;
     font-size: inherit;
     color: inherit;
+    text-align: left;
   }
   #container_header p,
   #container_home_header p {
     font-style: italic;
     line-height: 1.5;
+    text-align: left;
   }
   #container_header,
   #container_home_header,
