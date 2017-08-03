@@ -79,3 +79,14 @@
     color: white;
   }
   */
+
+  #nav_page_top {
+    margin-top: 2em !important;
+  }
+  #block_hub_left {
+    background-color: black;
+    color: white;
+  }
+  #nav_page .title {
+    background: rgb(215, 1, 0);
+  }
