@@ -17,8 +17,8 @@ layout: null
 
 
 <!-- begin CSS Section -->
-<link rel="stylesheet" type="text/css" href="https://cdn.schoolloop.com/1701251047/static/lib/jquery/1.8/css/smoothness/jquery-ui-1.8.16.custom.css" media="all">
-        <link rel="stylesheet" type="text/css" href="https://cdn.schoolloop.com/portalcdn/version_1701251047ssl/css/master.css" media="screen">
+<link rel="stylesheet" type="text/css" href="https://cdn.schoolloop.com/1709201436/static/lib/jquery/1.8/css/smoothness/jquery-ui-1.8.16.custom.css" media="all">
+        <link rel="stylesheet" type="text/css" href="https://cdn.schoolloop.com/portalcdn/version_1709201436ssl/css/master.css" media="screen">
 
     <style type="text/css" media="screen">
         body {
@@ -36,11 +36,11 @@ layout: null
 
     }
 
-a.icon_rss {float: left; background: url(https://cdn.schoolloop.com/1701251047/img/icon_rss.gif) left no-repeat; display: block; height: 15px; font: normal 10px Verdana, Arial, Helvetica, sans-serif; color:#ffffff; text-decoration:none; padding: 0px 3px 0px 20px; margin: 0px 10px 1px 5px; text-align: left;}
-a.icon_rss:hover {background: url(https://cdn.schoolloop.com/1701251047/img/icon_rss.gif) left no-repeat; color: #000000; text-decoration: none;}
+a.icon_rss {float: left; background: url(https://cdn.schoolloop.com/1709201436/img/icon_rss.gif) left no-repeat; display: block; height: 15px; font: normal 10px Verdana, Arial, Helvetica, sans-serif; color:#ffffff; text-decoration:none; padding: 0px 3px 0px 20px; margin: 0px 10px 1px 5px; text-align: left;}
+a.icon_rss:hover {background: url(https://cdn.schoolloop.com/1709201436/img/icon_rss.gif) left no-repeat; color: #000000; text-decoration: none;}
 
-a.icon_translate {float: left; background: url(https://cdn.schoolloop.com/1701251047/img/icon_translate.gif) left no-repeat; display: block; height: 15px; font: normal 10px Verdana, Arial, Helvetica, sans-serif; color:#ffffff; text-decoration:none; padding: 0px 3px 0px 28px; margin: 0px 0px 1px 5px; text-align: left;}
-a.icon_translate:hover {background: url(https://cdn.schoolloop.com/1701251047/img/icon_translate.gif) left no-repeat; color: #000000; text-decoration: none;}
+a.icon_translate {float: left; background: url(https://cdn.schoolloop.com/1709201436/img/icon_translate.gif) left no-repeat; display: block; height: 15px; font: normal 10px Verdana, Arial, Helvetica, sans-serif; color:#ffffff; text-decoration:none; padding: 0px 3px 0px 28px; margin: 0px 0px 1px 5px; text-align: left;}
+a.icon_translate:hover {background: url(https://cdn.schoolloop.com/1709201436/img/icon_translate.gif) left no-repeat; color: #000000; text-decoration: none;}
 
 h1 {font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: 400; font-size: 28px; color: #666; margin: 0px 0px 10px 0px; padding: 0px 0px 0px 0px; border-bottom:#cccccc solid 1px;}
 h2 {font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: 400; font-size: 22px; color: #333; margin: 7px 0px 0px 0px; padding: 0px 0px; text-transform: uppercase;}
@@ -204,7 +204,7 @@ a.icon_delete:hover {
 .site_map .section_row_section {padding: 5px 5px 0px 5px; vertical-align: middle; font-weight: normal}
 
 
-.site_map .page_row {padding: 5px; background: url('https://cdn.schoolloop.com/1701251047/img/icon_site_map_page.gif') 20px no-repeat; padding-left: 45px; vertical-align: middle; margin: 0px;}
+.site_map .page_row {padding: 5px; background: url('https://cdn.schoolloop.com/1709201436/img/icon_site_map_page.gif') 20px no-repeat; padding-left: 45px; vertical-align: middle; margin: 0px;}
 .site_map .page_row_highlight {background: #ffffbb; margin: 0px 0px 0px 0px; height: 13px; padding: 3px 0px 3px 35px; vertical-align: middle;}
 
 .site_map .page_row {cursor:move}
@@ -219,8 +219,8 @@ a.icon_delete:hover {
 
 .site_map_right {font-size: 11px; padding-top: 5px; float: right;}
 
-.site_map .site_map_homepage_icon {background: #faf6da url('https://cdn.schoolloop.com/1701251047/img/icon_site_map_page.gif') left no-repeat;}
-.site_map .site_map_page {background: #fff url('https://cdn.schoolloop.com/1701251047/img/icon_site_map_page.gif') left no-repeat;}
+.site_map .site_map_homepage_icon {background: #faf6da url('https://cdn.schoolloop.com/1709201436/img/icon_site_map_page.gif') left no-repeat;}
+.site_map .site_map_page {background: #fff url('https://cdn.schoolloop.com/1709201436/img/icon_site_map_page.gif') left no-repeat;}
 
 .site_map .site_map_section {margin-bottom:2px; padding-top: 0px;}
 
@@ -1246,7 +1246,7 @@ text-decoration:none;
 }
 
 
-.nav_public a:hover{
+.nav_public a:hover, .nav_public a:focus {
 color: #000000;
 background: #000000;
 text-decoration:none;
@@ -1260,52 +1260,50 @@ text-decoration:none;
 
 
 
-
-
-
 /* ######### Style for Drop Down Menu ######### */
 
 
+/* ***** dropmenudiv_a and .dropmenudiv_a a and .dropmenudiv_a a:hover styles updated to maintain custom or global style
+            when moved by the accessible menu javascript (accessible_dropdown.js) ****** */
 .dropmenudiv_a{
 position:absolute;
 font-family: Arial, Helvetica, sans-serif; font-weight: normal; font-size: 11px;
 width: 175px;
-background: #ffffff ;
 
-vertical-align:middle;
+background-color: #ffffff !important;
+
+vertical-align:middle !important;
 voice-family: "\"}\"";
 voice-family: inherit;
-border-right: 1px #000000 solid;border-bottom: 1px #000000 solid;border-left: 1px #000000 solid;margin: -1px 0px 0px 0px;
-padding: 3px 0px 0px 0px;
+border-right: 1px #000000 solid !important;border-bottom: 1px #000000 solid !important;border-left: 1px #000000 solid !important;margin: -1px 0px 0px 0px !important;
+padding: 3px 0px 0px 0px !important;
 visibility: hidden;
-text-align: left;
+text-align: left !important;
 z-index:500;
 }
 
-
-
 .dropmenudiv_a a{
-display: block;
-background: ;
-margin: 0px 0px 0px 0px;
-padding: 2px 10px 2px 10px;
-color: ;
-text-decoration:none;
+    display: block;
+    text-align: left !important;
+    background-color:  !important;
+    background-image: none !important;
+
+    margin: 0px 0px 0px 0px !important;
+    padding: 2px 10px 2px 10px !important;
+    color: #059 !important;
+    text-decoration:none !important;
 }
 
 * html .dropmenudiv_a a{ /*IE only hack*/
 width: 100%;
 }
 
-.dropmenudiv_a a:hover{ /*THEME CHANGE HERE*/
-
-background: #ffffbb;
-color: ;
-text-decoration: none;
-z-index:500;
+.dropmenudiv_a a:hover, .dropmenudiv_a a:focus{ /*THEME CHANGE HERE*/
+    background: #ffffbb !important;;
+    color: #ff9900 !important;
+    text-decoration: none;
+    z-index:500;
 }
-
-
 
 
 .nav_container{width: auto; height: 32px;
@@ -1565,7 +1563,7 @@ width:100%;
 
 .ajax_accordion_content, .cal_Detail_holder, .prog_Detail_holder, .curAss_Detail_holder {
     display:none;
-    background: url(https://cdn.schoolloop.com/1701251047/img/accordion_content_bottom.png) bottom no-repeat;
+    background: url(https://cdn.schoolloop.com/1709201436/img/accordion_content_bottom.png) bottom no-repeat;
     border-right: 1px #f90 solid;
     padding-left: 3px;
     padding-right 10px;
@@ -1591,68 +1589,68 @@ border:1px solid black;
 width:32px;
 height:16px;
 }
-  a.icon_rss {float: left; background: url(https://cdn.schoolloop.com/1701251047/img/icon_rss.gif) left no-repeat; display: block; height: 15px; font: normal 10px Verdana, Arial, Helvetica, sans-serif; color:#ffffff; text-decoration:none; padding: 0px 3px 0px 20px; margin: 0px 10px 1px 5px; text-align: left;}
-  a.icon_rss:hover {background: url(https://cdn.schoolloop.com/1701251047/img/icon_rss.gif) left no-repeat; color: #000000; text-decoration: none;}
+  a.icon_rss {float: left; background: url(https://cdn.schoolloop.com/1709201436/img/icon_rss.gif) left no-repeat; display: block; height: 15px; font: normal 10px Verdana, Arial, Helvetica, sans-serif; color:#ffffff; text-decoration:none; padding: 0px 3px 0px 20px; margin: 0px 10px 1px 5px; text-align: left;}
+  a.icon_rss:hover {background: url(https://cdn.schoolloop.com/1709201436/img/icon_rss.gif) left no-repeat; color: #000000; text-decoration: none;}
 
-  a.icon_translate {float: left; background: url(https://cdn.schoolloop.com/1701251047/img/icon_translate.gif) left no-repeat; display: block; height: 15px; font: normal 10px Verdana, Arial, Helvetica, sans-serif; color:#ffffff; text-decoration:none; padding: 0px 3px 0px 28px; margin: 0px 0px 1px 5px; text-align: left;}
-  a.icon_translate:hover {background: url(https://cdn.schoolloop.com/1701251047/img/icon_translate.gif) left no-repeat; color: #000000; text-decoration: none;}
+  a.icon_translate {float: left; background: url(https://cdn.schoolloop.com/1709201436/img/icon_translate.gif) left no-repeat; display: block; height: 15px; font: normal 10px Verdana, Arial, Helvetica, sans-serif; color:#ffffff; text-decoration:none; padding: 0px 3px 0px 28px; margin: 0px 0px 1px 5px; text-align: left;}
+  a.icon_translate:hover {background: url(https://cdn.schoolloop.com/1709201436/img/icon_translate.gif) left no-repeat; color: #000000; text-decoration: none;}
 
   #translate {width: auto; margin-top: 10px; text-align: center;}
   #translate img{padding: 10px;}
 
-  a.icon_settings {text-align: left; display: block; width: auto; background: url(https://cdn.schoolloop.com/1701251047/img/icon_settings.png) no-repeat top left; font-size: 13px; color: #4A719E; text-decoration:none; padding: 9px 10px 9px 28px; line-height: 15px; border-left: 1px #fff solid;}
-  a.icon_settings:hover {background: #f90 url(https://cdn.schoolloop.com/1701251047/img/icon_settings.png) no-repeat bottom left; color: #fff; text-decoration:none;}
+  a.icon_settings {text-align: left; display: block; width: auto; background: url(https://cdn.schoolloop.com/1709201436/img/icon_settings.png) no-repeat top left; font-size: 13px; color: #4A719E; text-decoration:none; padding: 9px 10px 9px 28px; line-height: 15px; border-left: 1px #fff solid;}
+  a.icon_settings:hover {background: #f90 url(https://cdn.schoolloop.com/1709201436/img/icon_settings.png) no-repeat bottom left; color: #fff; text-decoration:none;}
 
-  a.icon_settings_module {text-align: left; height: 21px; display: block; background: url(https://cdn.schoolloop.com/1701251047/img/icon_settings.png) no-repeat; font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; color: #4A719E; text-decoration:none; margin-top: 10px; padding: 10px 2px 2px 32px;}
-  a.icon_settings_module:hover {display: block; background: #f90 url(https://cdn.schoolloop.com/1701251047/img/icon_settings.png) bottom left no-repeat; color: #fff; text-decoration:none; }
+  a.icon_settings_module {text-align: left; height: 21px; display: block; background: url(https://cdn.schoolloop.com/1709201436/img/icon_settings.png) no-repeat; font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; color: #4A719E; text-decoration:none; margin-top: 10px; padding: 10px 2px 2px 32px;}
+  a.icon_settings_module:hover {display: block; background: #f90 url(https://cdn.schoolloop.com/1709201436/img/icon_settings.png) bottom left no-repeat; color: #fff; text-decoration:none; }
 
-  a.icon_print {text-align:left; text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/1701251047/img/icon_print.png) center no-repeat; height: 25px; width: 35px; text-decoration:none;}
-  a.icon_print:hover {background: #f90 url(https://cdn.schoolloop.com/1701251047/img/icon_print.png) center no-repeat; text-decoration:none;}
+  a.icon_print {text-align:left; text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/1709201436/img/icon_print.png) center no-repeat; height: 25px; width: 35px; text-decoration:none;}
+  a.icon_print:hover {background: #f90 url(https://cdn.schoolloop.com/1709201436/img/icon_print.png) center no-repeat; text-decoration:none;}
 
-  a.icon_print {text-align:left; text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/1701251047/img/icon_print.png) center no-repeat; height: 25px; width: 35px; text-decoration:none;}
-  a.icon_print:hover {background: #f90 url(https://cdn.schoolloop.com/1701251047/img/icon_print.png) center no-repeat; text-decoration:none;}
+  a.icon_print {text-align:left; text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/1709201436/img/icon_print.png) center no-repeat; height: 25px; width: 35px; text-decoration:none;}
+  a.icon_print:hover {background: #f90 url(https://cdn.schoolloop.com/1709201436/img/icon_print.png) center no-repeat; text-decoration:none;}
 
-  a.icon_cal_day {text-align:left; text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/1701251047/img/icon_cal_day.png) center no-repeat; height: 25px; width: 30px; text-decoration:none;}
-  a.icon_cal_day:hover {background: #f90 url(https://cdn.schoolloop.com/1701251047/img/icon_cal_day.png) center no-repeat; text-decoration:none;}
+  a.icon_cal_day {text-align:left; text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/1709201436/img/icon_cal_day.png) center no-repeat; height: 25px; width: 30px; text-decoration:none;}
+  a.icon_cal_day:hover {background: #f90 url(https://cdn.schoolloop.com/1709201436/img/icon_cal_day.png) center no-repeat; text-decoration:none;}
 
-  a.icon_cal_week {text-align:left; text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/1701251047/img/icon_cal_week.png) center no-repeat; height: 25px; width: 30px; text-decoration:none;}
-  a.icon_cal_week:hover {background: #f90 url(https://cdn.schoolloop.com/1701251047/img/icon_cal_week.png) center no-repeat; text-decoration:none;}
+  a.icon_cal_week {text-align:left; text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/1709201436/img/icon_cal_week.png) center no-repeat; height: 25px; width: 30px; text-decoration:none;}
+  a.icon_cal_week:hover {background: #f90 url(https://cdn.schoolloop.com/1709201436/img/icon_cal_week.png) center no-repeat; text-decoration:none;}
 
-  a.icon_cal_month {text-align:left; text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/1701251047/img/icon_cal_month.png) center no-repeat; height: 25px; width: 30px; text-decoration:none;}
-  a.icon_cal_month:hover {background: #f90 url(https://cdn.schoolloop.com/1701251047/img/icon_cal_month.png) center no-repeat; text-decoration:none;}
+  a.icon_cal_month {text-align:left; text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/1709201436/img/icon_cal_month.png) center no-repeat; height: 25px; width: 30px; text-decoration:none;}
+  a.icon_cal_month:hover {background: #f90 url(https://cdn.schoolloop.com/1709201436/img/icon_cal_month.png) center no-repeat; text-decoration:none;}
 
-  a.icon_next {text-indent: 9000px; display: block; background: transparent url(https://cdn.schoolloop.com/1701251047/img/icon_arrow_next.png) top no-repeat; height: 25px; width: 20px; text-decoration:none;}
-  a.icon_next:hover {background:  url(https://cdn.schoolloop.com/1701251047/img/icon_arrow_next.png) bottom no-repeat; text-decoration:none;}
+  a.icon_next {text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/1709201436/img/icon_arrow_next.png) top no-repeat; height: 25px; width: 20px; text-decoration:none;}
+  a.icon_next:hover {background:  url(https://cdn.schoolloop.com/1709201436/img/icon_arrow_next.png) bottom no-repeat; text-decoration:none;}
 
-  a.icon_previous {text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/1701251047/img/icon_arrow_previous.png) top no-repeat; height: 25px; width: 20px; text-decoration:none;}
-  a.icon_previous:hover {background:  url(https://cdn.schoolloop.com/1701251047/img/icon_arrow_previous.png) bottom no-repeat; text-decoration:none;}
+  a.icon_previous {text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/1709201436/img/icon_arrow_previous.png) top no-repeat; height: 25px; width: 20px; text-decoration:none;}
+  a.icon_previous:hover {background:  url(https://cdn.schoolloop.com/1709201436/img/icon_arrow_previous.png) bottom no-repeat; text-decoration:none;}
 
-  a.btn_module {text-align: left; height: 17px; display: block; background: url(https://cdn.schoolloop.com/1701251047/img/btn_module.gif) repeat-x; font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; color: #3366cc; text-decoration:none; margin: 0px; padding: 5px 10px 2px 10px; border: 1px #dfdfdf solid;}
-  a.btn_module:hover {display: block; background: #ffffbb url(https://cdn.schoolloop.com/1701251047/img/btn_module.gif) bottom repeat-x; color: #3366cc; text-decoration:underline; }
-
-
-  a.icon_loopmail_sm {text-indent: -9000px; float: left; display: block; background: transparent url(https://cdn.schoolloop.com/1701251047/img/icon_loopmail_sm.png) center no-repeat; height: 18px; width: 25px; text-decoration:none;}
-  a.icon_loopmail_sm:hover {background: #f90 url(https://cdn.schoolloop.com/1701251047/img/icon_loopmail_sm.png) center no-repeat; text-decoration:none;}
-
-  a.icon_loopmail_all {background: transparent url(https://cdn.schoolloop.com/1701251047/img/icon_loopmail_sm.png) center left no-repeat; padding: 5px 5px 5px 25px; text-decoration:none;}
-  a.icon_loopmail_all:hover {color: #f90; background: url(https://cdn.schoolloop.com/1701251047/img/icon_loopmail_sm.png) center left no-repeat; text-decoration:none;}
-
-  a.icon_dropbox_link {background: transparent url(https://cdn.schoolloop.com/1701251047/img/icon_dropbox_sm.png) center left no-repeat; padding: 5px 5px 5px 25px; text-decoration:none;}
-  a.icon_dropbox_link:hover {color: #f90; background: url(https://cdn.schoolloop.com/1701251047/img/icon_dropbox_sm.png) center left no-repeat; text-decoration:none;}
+  a.btn_module {text-align: left; height: 17px; display: block; background: url(https://cdn.schoolloop.com/1709201436/img/btn_module.gif) repeat-x; font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; color: #3366cc; text-decoration:none; margin: 0px; padding: 5px 10px 2px 10px; border: 1px #dfdfdf solid;}
+  a.btn_module:hover {display: block; background: #ffffbb url(https://cdn.schoolloop.com/1709201436/img/btn_module.gif) bottom repeat-x; color: #3366cc; text-decoration:underline; }
 
 
-  a.icon_site_sm {text-indent: -9000px; float: left; display: block; background: transparent url(https://cdn.schoolloop.com/1701251047/img/icon_course_site.png) center no-repeat; height: 18px; width: 25px; text-decoration:none;}
-  a.icon_site_sm:hover {background: #f90 url(https://cdn.schoolloop.com/1701251047/img/icon_course_site.png) center no-repeat; text-decoration:none;}
+  a.icon_loopmail_sm {text-indent: -9000px; float: left; display: block; background: transparent url(https://cdn.schoolloop.com/1709201436/img/icon_loopmail_sm.png) center no-repeat; height: 18px; width: 25px; text-decoration:none;}
+  a.icon_loopmail_sm:hover {background: #f90 url(https://cdn.schoolloop.com/1709201436/img/icon_loopmail_sm.png) center no-repeat; text-decoration:none;}
 
-  .icon_download_file {background: url(https://cdn.schoolloop.com/1701251047/img/icon_download_file.png) top right no-repeat;}
-  .icon_download_file:hover {background: url(https://cdn.schoolloop.com/1701251047/img/icon_download_file.png) top right no-repeat;}
+  a.icon_loopmail_all {background: transparent url(https://cdn.schoolloop.com/1709201436/img/icon_loopmail_sm.png) center left no-repeat; padding: 5px 5px 5px 25px; text-decoration:none;}
+  a.icon_loopmail_all:hover {color: #f90; background: url(https://cdn.schoolloop.com/1709201436/img/icon_loopmail_sm.png) center left no-repeat; text-decoration:none;}
 
-  .icon_web_section_portal a{display: block; background: transparent url(https://cdn.schoolloop.com/1701251047/img/icon_web_section_portal.png) center left no-repeat; padding: 3px 3px 3px 22px;}
-  .icon_web_section_portal a:hover{background: #f90 url(https://cdn.schoolloop.com/1701251047/img/icon_web_section_portal.png) center left no-repeat; color: #fff; text-decoration: none;}
+  a.icon_dropbox_link {background: transparent url(https://cdn.schoolloop.com/1709201436/img/icon_dropbox_sm.png) center left no-repeat; padding: 5px 5px 5px 25px; text-decoration:none;}
+  a.icon_dropbox_link:hover {color: #f90; background: url(https://cdn.schoolloop.com/1709201436/img/icon_dropbox_sm.png) center left no-repeat; text-decoration:none;}
+
+
+  a.icon_site_sm {text-indent: -9000px; float: left; display: block; background: transparent url(https://cdn.schoolloop.com/1709201436/img/icon_course_site.png) center no-repeat; height: 18px; width: 25px; text-decoration:none;}
+  a.icon_site_sm:hover {background: #f90 url(https://cdn.schoolloop.com/1709201436/img/icon_course_site.png) center no-repeat; text-decoration:none;}
+
+  .icon_download_file {background: url(https://cdn.schoolloop.com/1709201436/img/icon_download_file.png) top right no-repeat;}
+  .icon_download_file:hover {background: url(https://cdn.schoolloop.com/1709201436/img/icon_download_file.png) top right no-repeat;}
+
+  .icon_web_section_portal a{display: block; background: transparent url(https://cdn.schoolloop.com/1709201436/img/icon_web_section_portal.png) center left no-repeat; padding: 3px 3px 3px 22px;}
+  .icon_web_section_portal a:hover{background: #f90 url(https://cdn.schoolloop.com/1709201436/img/icon_web_section_portal.png) center left no-repeat; color: #fff; text-decoration: none;}
 
 a.icon_expand_view {
 display: block;
-background: transparent url(https://cdn.schoolloop.com/1701251047/img/icon_locker_sprite.png) no-repeat -56px -155px;
+background: transparent url(https://cdn.schoolloop.com/1709201436/img/icon_locker_sprite.png) no-repeat -56px -155px;
 height: 28px; width: 28px;
 border-radius: 3px;
 -moz-border-radius: 3px;
@@ -1660,12 +1658,12 @@ border-radius: 3px;
 text-decoration:none;
 cursor: pointer;
 }
-a.icon_expand_view:hover {background: #f90 url(https://cdn.schoolloop.com/1701251047/img/icon_locker_sprite.png) no-repeat -56px -155px; text-decoration:none;}
+a.icon_expand_view:hover {background: #f90 url(https://cdn.schoolloop.com/1709201436/img/icon_locker_sprite.png) no-repeat -56px -155px; text-decoration:none;}
 
 
 a.icon_site_map_open {
 float: left;
-background: transparent url(https://cdn.schoolloop.com/1701251047/img/icon_locker_sprite.png) no-repeat -28px -155px;
+background: transparent url(https://cdn.schoolloop.com/1709201436/img/icon_locker_sprite.png) no-repeat -28px -155px;
 height: 28px; width: 28px;
 border-radius: 3px;
 -moz-border-radius: 3px;
@@ -1676,14 +1674,14 @@ cursor: pointer;
 margin-left: 5px;
 
 }
-a.icon_site_map_open:hover {background: #f90 url(https://cdn.schoolloop.com/1701251047/img/icon_locker_sprite.png) no-repeat -28px -155px; text-decoration:none;}
+a.icon_site_map_open:hover {background: #f90 url(https://cdn.schoolloop.com/1709201436/img/icon_locker_sprite.png) no-repeat -28px -155px; text-decoration:none;}
 
 
 
 a.icon_site_map_collapse {
 display: block;
 float: left;
-background: transparent url(https://cdn.schoolloop.com/1701251047/img/icon_locker_sprite.png) no-repeat 0px -155px;
+background: transparent url(https://cdn.schoolloop.com/1709201436/img/icon_locker_sprite.png) no-repeat 0px -155px;
 height: 28px;
 width: 28px;
 border-radius: 3px;
@@ -1693,7 +1691,7 @@ cursor: pointer;
 text-decoration:none;
 }
 
-a.icon_site_map_collapse:hover {background: #f90 url(https://cdn.schoolloop.com/1701251047/img/icon_locker_sprite.png) no-repeat 0px -155px; text-decoration:none;}
+a.icon_site_map_collapse:hover {background: #f90 url(https://cdn.schoolloop.com/1709201436/img/icon_locker_sprite.png) no-repeat 0px -155px; text-decoration:none;}
 
 
 
@@ -1882,20 +1880,20 @@ text-decoration: none;
 .news h2{font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 18px; color: #aa0000; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px; border-bottom: 3px #cccccc solid; text-transform: uppercase;}
 
 .news_attach_link {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #666666; margin: 0px 0px 3px 0px; line-height: 16px}
-.news_attach_link .link a{background: url(https://cdn.schoolloop.com/1701251047/img/icon_link.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
-.news_attach_link .file a{background: url(https://cdn.schoolloop.com/1701251047/img/icon_attach.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
+.news_attach_link .link a{background: url(https://cdn.schoolloop.com/1709201436/img/icon_link.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
+.news_attach_link .file a{background: url(https://cdn.schoolloop.com/1709201436/img/icon_attach.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
 
 .locker_attach_link {margin-bottom: 15px}
 
-.locker_attach_link a.link{background: url(https://cdn.schoolloop.com/1701251047/img/icon_link.gif) top left no-repeat; padding: 0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0px 0px 5px 0px;}
-.locker_attach_link a.file{background: url(https://cdn.schoolloop.com/1701251047/img/icon_attach.gif) top left no-repeat; padding: 0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0px 0px 5px 0px;}
-.locker_attach_link a.folder{background: url(https://cdn.schoolloop.com/1701251047/img/icon_folder.gif) top left no-repeat; padding: 0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0px 0px 5px 0px;}
+.locker_attach_link a.link{background: url(https://cdn.schoolloop.com/1709201436/img/icon_link.gif) top left no-repeat; padding: 0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0px 0px 5px 0px;}
+.locker_attach_link a.file{background: url(https://cdn.schoolloop.com/1709201436/img/icon_attach.gif) top left no-repeat; padding: 0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0px 0px 5px 0px;}
+.locker_attach_link a.folder{background: url(https://cdn.schoolloop.com/1709201436/img/icon_folder.gif) top left no-repeat; padding: 0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0px 0px 5px 0px;}
 .locker_attach_link .content{padding: 0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 11px; margin: 0px 0px 5px 0px;}
 
 
-.full_page .locker_attach_link a.link{background: url(https://cdn.schoolloop.com/1701251047/img/icon_link.gif) top left no-repeat; padding: 0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; margin: 0px 0px 5px 0px;}
-.full_page .locker_attach_link a.file{background: url(https://cdn.schoolloop.com/1701251047/img/icon_attach.gif) top left no-repeat; padding: 0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; margin: 0px 0px 5px 0px;}
-.full_page .locker_attach_link a.folder{background: url(https://cdn.schoolloop.com/1701251047/img/icon_folder.gif) top left no-repeat; padding: 0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; margin: 0px 0px 5px 0px;}
+.full_page .locker_attach_link a.link{background: url(https://cdn.schoolloop.com/1709201436/img/icon_link.gif) top left no-repeat; padding: 0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; margin: 0px 0px 5px 0px;}
+.full_page .locker_attach_link a.file{background: url(https://cdn.schoolloop.com/1709201436/img/icon_attach.gif) top left no-repeat; padding: 0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; margin: 0px 0px 5px 0px;}
+.full_page .locker_attach_link a.folder{background: url(https://cdn.schoolloop.com/1709201436/img/icon_folder.gif) top left no-repeat; padding: 0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; margin: 0px 0px 5px 0px;}
 .full_page .locker_attach_link .content{padding: 0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 11px; margin: 0px 0px 20px 0px;}
 
 
@@ -2023,8 +2021,8 @@ text-decoration: none;
 
 .content01 .attach .title{ font-size: 12px; font-weight: bold; color: #000000; background: transparent; width: auto; padding: 10px 0px 0px 0px; margin: 0px 0px 0px 0px;}
 .content01 .attach .container{width: auto; padding: 0px 0px  3px 0px 3px 0px;}
-.content01 .attach .container .link a{background: url(https://cdn.schoolloop.com/1701251047/img/icon_link.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin:  0px 0px 5px 0px;}
-.content01 .attach .container .file a{background: url(https://cdn.schoolloop.com/1701251047/img/icon_attach.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
+.content01 .attach .container .link a{background: url(https://cdn.schoolloop.com/1709201436/img/icon_link.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin:  0px 0px 5px 0px;}
+.content01 .attach .container .file a{background: url(https://cdn.schoolloop.com/1709201436/img/icon_attach.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
 
 .content01 .publish_line {border-bottom: 1px #cccccc solid; font-size:1px; line-height:1px; width: 100%; margin: 3px 0px 3px 0px;}
 .content01 hr {color:#cccccc; background-color:#cccccc; height: 1px; border: 0; width: 100%; margin: 3px 0px 3px 0px;}
@@ -2228,8 +2226,8 @@ margin:0 0 0 -2px;
 
 .content02 .attach .title{ font-size: 12px; font-weight: bold; color: #000000; background: transparent; width: auto; padding: 10px 0px 0px 0px; margin: 0px 0px 0px 0px;}
 .content02 .attach .container{width: auto; padding: 0px 0px  3px 0px 3px 0px;}
-.content02 .attach .container .link a{background: url(https://cdn.schoolloop.com/1701251047/img/icon_link.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin:  0px 0px 5px 0px;}
-.content02 .attach .container .file a{background: url(https://cdn.schoolloop.com/1701251047/img/icon_attach.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
+.content02 .attach .container .link a{background: url(https://cdn.schoolloop.com/1709201436/img/icon_link.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin:  0px 0px 5px 0px;}
+.content02 .attach .container .file a{background: url(https://cdn.schoolloop.com/1709201436/img/icon_attach.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
 
 .content02 .publish_line {border-bottom: 1px #cccccc solid; font-size:1px; line-height:1px; width: 100%; margin: 3px 0px 3px 0px;}
 .content02 hr {color:#cccccc; background-color:#cccccc; height: 1px; border: 0; width: 100%; margin: 3px 0px 3px 0px;}
@@ -2356,8 +2354,8 @@ margin:0 0 0 -2px;
 
 .content03 .attach .title{ font-size: 12px; font-weight: bold; color: #000000; background: transparent; width: auto; padding: 10px 0px 0px 0px; margin: 0px 0px 0px 0px;}
 .content03 .attach .container{width: auto; padding: 0px 0px  3px 0px 3px 0px;}
-.content03 .attach .container .link a{background: url(https://cdn.schoolloop.com/1701251047/img/icon_link.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin:  0px 0px 5px 0px;}
-.content03 .attach .container .file a{background: url(https://cdn.schoolloop.com/1701251047/img/icon_attach.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
+.content03 .attach .container .link a{background: url(https://cdn.schoolloop.com/1709201436/img/icon_link.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin:  0px 0px 5px 0px;}
+.content03 .attach .container .file a{background: url(https://cdn.schoolloop.com/1709201436/img/icon_attach.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
 
 
 .content03 .publish_line {border-bottom: 1px #cccccc solid; font-size:1px; line-height:1px; width: 100%; margin: 3px 0px 3px 0px;}
@@ -2484,8 +2482,8 @@ margin:0 0 0 -2px;
 
  .content04 .attach .title{ font-size: 12px; font-weight: bold; color: #000000; background: transparent; width: auto; padding: 10px 0px 0px 0px; margin: 0px 0px 0px 0px;}
  .content04 .attach .container{width: auto; padding: 0px 0px  3px 0px 3px 0px;}
- .content04 .attach .container .link a{background: url(https://cdn.schoolloop.com/1701251047/img/icon_link.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin:  0px 0px 5px 0px;}
- .content04 .attach .container .file a{background: url(https://cdn.schoolloop.com/1701251047/img/icon_attach.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
+ .content04 .attach .container .link a{background: url(https://cdn.schoolloop.com/1709201436/img/icon_link.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin:  0px 0px 5px 0px;}
+ .content04 .attach .container .file a{background: url(https://cdn.schoolloop.com/1709201436/img/icon_attach.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
 
 
  .content04 .publish_line {border-bottom: 1px #cccccc solid; font-size:1px; line-height:1px; width: 100%; margin: 3px 0px 3px 0px;}
@@ -2560,8 +2558,8 @@ margin:0 0 0 -2px;
 
 .content05 .attach .title{ font-size: 12px; font-weight: bold; color: #000000; background: transparent; width: auto; padding: 10px 0px 0px 0px; margin: 0px 0px 0px 0px;}
 .content05 .attach .container{width: auto; padding: 0px 0px  3px 0px 3px 0px;}
-.content05 .attach .container .link a{background: url(https://cdn.schoolloop.com/1701251047/img/icon_link.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin:  0px 0px 5px 0px;}
-.content05 .attach .container .file a{background: url(https://cdn.schoolloop.com/1701251047/img/icon_attach.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
+.content05 .attach .container .link a{background: url(https://cdn.schoolloop.com/1709201436/img/icon_link.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin:  0px 0px 5px 0px;}
+.content05 .attach .container .file a{background: url(https://cdn.schoolloop.com/1709201436/img/icon_attach.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
 
 
  .content05 .publish_line {border-bottom: 1px #cccccc solid; font-size:1px; line-height:1px; width: 100%; margin: 3px 0px 3px 0px;}
@@ -2641,8 +2639,8 @@ margin:0 0 0 -2px;
 
 .content06 .attach .title{ font-size: 12px; font-weight: bold; color: #000000; background: transparent; width: auto; padding: 10px 0px 0px 0px; margin: 0px 0px 0px 0px;}
 .content06 .attach .container{width: auto; padding: 0px 0px  3px 0px 3px 0px;}
-.content06 .attach .container .link a{background: url(https://cdn.schoolloop.com/1701251047/img/icon_link.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin:  0px 0px 5px 0px;}
-.content06 .attach .container .file a{background: url(https://cdn.schoolloop.com/1701251047/img/icon_attach.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
+.content06 .attach .container .link a{background: url(https://cdn.schoolloop.com/1709201436/img/icon_link.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin:  0px 0px 5px 0px;}
+.content06 .attach .container .file a{background: url(https://cdn.schoolloop.com/1709201436/img/icon_attach.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
 
  .content06 .publish_line {border-bottom: 1px #cccccc solid; font-size:1px; line-height:1px; width: 100%; margin: 3px 0px 3px 0px;}
  .content06 hr {color:#cccccc; background-color:#cccccc; height: 1px; border: 0; width: 100%; margin: 3px 0px 3px 0px;}
@@ -2951,9 +2949,9 @@ font-size: 1px;
 
 
 
-.page_bottom_left {width:15px; height: 10px; background: #ffffff url(https://cdn.schoolloop.com/1701251047/img/content_bottom_left.gif) no-repeat left bottom;}
-.page_bottom_center {height: 10px; background: #ffffff url(https://cdn.schoolloop.com/1701251047/img/content_bottom_center.gif) repeat-x bottom;}
-.page_bottom_right {width:15px; height: 10px; background: #ffffff url(https://cdn.schoolloop.com/1701251047/img/content_bottom_right.gif) right bottom no-repeat; }
+.page_bottom_left {width:15px; height: 10px; background: #ffffff url(https://cdn.schoolloop.com/1709201436/img/content_bottom_left.gif) no-repeat left bottom;}
+.page_bottom_center {height: 10px; background: #ffffff url(https://cdn.schoolloop.com/1709201436/img/content_bottom_center.gif) repeat-x bottom;}
+.page_bottom_right {width:15px; height: 10px; background: #ffffff url(https://cdn.schoolloop.com/1709201436/img/content_bottom_right.gif) right bottom no-repeat; }
 
 
 .home_column_top_left {background: #ffffff; vertical-align: middle;}
@@ -3793,7 +3791,7 @@ width: auto;
 .caption_pos_bottom {
     position: absolute;
     bottom: 0px;
-    /* background: url(https://cdn.schoolloop.com/1701251047/img/opacity_60.png); */
+    /* background: url(https://cdn.schoolloop.com/1709201436/img/opacity_60.png); */
 
     background:#000;
     filter: alpha(opacity=8); /* ie lt 7 */
@@ -3950,8 +3948,8 @@ a.icon_block_delete:hover {background: #ffff99 url(/img/cms/icon_delete.gif) no-
 
 </style>
         
-<link href="https://cdn.schoolloop.com/1701251047/static/lib/vex/vex-2.2.1/css/vex.css" rel="stylesheet" type="text/css">
-<link href="https://cdn.schoolloop.com/1701251047/static/lib/vex/vex-2.2.1/css/vex-theme-os.css" rel="stylesheet" type="text/css">
+<link href="https://cdn.schoolloop.com/1709201436/static/lib/vex/vex-2.2.1/css/vex.css" rel="stylesheet" type="text/css">
+<link href="https://cdn.schoolloop.com/1709201436/static/lib/vex/vex-2.2.1/css/vex-theme-os.css" rel="stylesheet" type="text/css">
 
 
 
@@ -3962,38 +3960,39 @@ a.icon_block_delete:hover {background: #ffff99 url(/img/cms/icon_delete.gif) no-
 
 <!-- begin JS Section local_js= -->
 
-<script type="text/javascript" src="https://cdn.schoolloop.com/1701251047/static/lib/jquery/1.8/js/jquery-1.8.2.min.js"></script>
-        <script type="text/javascript" src="https://cdn.schoolloop.com/1701251047/static/lib/jquery/1.8/jquery-ui-1.9.2/ui/minified/jquery-ui.min.js"></script>
-        <script type="text/javascript" src="https://cdn.schoolloop.com/1701251047/static/lib/classy/classy_1.4/classy.js"></script>
-        <script type="text/javascript" src="https://cdn.schoolloop.com/portalcdn/version_1701251047ssl/pf4/javascript/global.js"></script>
+<script type="text/javascript" src="https://cdn.schoolloop.com/1709201436/static/lib/jquery/1.8/js/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.schoolloop.com/1709201436/static/lib/jquery/1.8/jquery-ui-1.9.2/ui/minified/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="https://cdn.schoolloop.com/1709201436/static/lib/classy/classy_1.4/classy.js"></script>
+        <script type="text/javascript" src="https://cdn.schoolloop.com/portalcdn/version_1709201436ssl/pf4/javascript/global.js"></script>
 
-        <script type="text/javascript" src="https://cdn.schoolloop.com/1701251047/static/lib/momentjs/momentjs_2.10.3.min.js"></script>
-        <script src="https://cdn.schoolloop.com/1701251047/static//lib/chartjs/Chart.js"></script>
-        <script src="https://cdn.schoolloop.com/1701251047/static//lib/chartjs/chart_class.js"></script>
+        <script type="text/javascript" src="https://cdn.schoolloop.com/1709201436/static/lib/momentjs/momentjs_2.10.3.min.js"></script>
+        <script src="https://cdn.schoolloop.com/1709201436/static//lib/chartjs/Chart.js"></script>
+        <script src="https://cdn.schoolloop.com/1709201436/static//lib/chartjs/chart_class.js"></script>
 
-        <script type="text/javascript" src="https://cdn.schoolloop.com/1701251047/static/lib/jquery/extra/js/qtip.js"></script>
+        <script type="text/javascript" src="https://cdn.schoolloop.com/1709201436/static/lib/jquery/extra/js/qtip.js"></script>
 
-        <script type="text/javascript" src="https://cdn.schoolloop.com/portalcdn/version_1701251047ssl/javascript/master.js"></script>
-        <script type="text/javascript" src="https://cdn.schoolloop.com/portalcdn/version_1701251047ssl/javascript/master1_8.js"></script>
-        <script type="text/javascript" src="https://cdn.schoolloop.com/portalcdn/version_1701251047ssl/pf4/javascript/legacy.js"></script>
-        <script type="text/javascript" src="https://cdn.schoolloop.com/portalcdn/version_1701251047ssl/pf4/javascript/field_autosave.js"></script>
+        <script type="text/javascript" src="https://cdn.schoolloop.com/portalcdn/version_1709201436ssl/javascript/master.js"></script>
+        <script type="text/javascript" src="https://cdn.schoolloop.com/portalcdn/version_1709201436ssl/javascript/master1_8.js"></script>
+        <script type="text/javascript" src="https://cdn.schoolloop.com/portalcdn/version_1709201436ssl/pf4/javascript/legacy.js"></script>
+        <script type="text/javascript" src="https://cdn.schoolloop.com/portalcdn/version_1709201436ssl/pf4/javascript/field_autosave.js"></script>
 
-        <script type="text/javascript" src="https://cdn.schoolloop.com/1701251047/static/lib/jquery/extra/js/jquery.form.js"></script>
-        <script type="text/javascript" src="https://cdn.schoolloop.com/1701251047/static/lib/jquery_old/jScrollPane.js"></script>
+        <script type="text/javascript" src="https://cdn.schoolloop.com/1709201436/static/lib/jquery/extra/js/jquery.form.js"></script>
+        <script type="text/javascript" src="https://cdn.schoolloop.com/1709201436/static/lib/jquery_old/jScrollPane.js"></script>
 
-        <script type="text/javascript" src="https://cdn.schoolloop.com/1701251047/static/lib/reponsiveslides_sl/responsive_player.js"></script>
+        <script type="text/javascript" src="https://cdn.schoolloop.com/1709201436/static/lib/reponsiveslides_sl/responsive_player.js"></script>
 
-        <script type="text/javascript" src="https://cdn.schoolloop.com/1701251047/static/lib/jquery/extra/js/jquery.ui.touch-punch.js"></script>
+        <script type="text/javascript" src="https://cdn.schoolloop.com/1709201436/static/lib/jquery/extra/js/jquery.ui.touch-punch.js"></script>
 
-        <link rel="stylesheet" type="text/css" media="all" href="https://cdn.schoolloop.com/1701251047/static/lib/jquery_old/jScrollPane.css">
+        <link rel="stylesheet" type="text/css" media="all" href="https://cdn.schoolloop.com/1709201436/static/lib/jquery_old/jScrollPane.css">
 
-        <link href="https://cdn.schoolloop.com/1701251047/static/lib/colorbox/colorbox.css" rel="stylesheet" type="text/css">
-        <script type="text/javascript" src="https://cdn.schoolloop.com/1701251047/static/lib/colorbox/jquery.colorbox-min.js"></script>
+        <link href="https://cdn.schoolloop.com/1709201436/static/lib/colorbox/colorbox.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="https://cdn.schoolloop.com/1709201436/static/lib/colorbox/jquery.colorbox-min.js"></script>
 
-        <link href="https://cdn.schoolloop.com/1701251047/static/lib/jquery/extra/css/qtip.css" rel="stylesheet" type="text/css">
-        <script type="text/javascript" src="https://cdn.schoolloop.com/1701251047/static/lib/jquery/extra/js/qtip.js"></script>
+        <link href="https://cdn.schoolloop.com/1709201436/static/lib/jquery/extra/css/qtip.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="https://cdn.schoolloop.com/1709201436/static/lib/jquery/extra/js/qtip.js"></script>
+        <script type="text/javascript" src="https://cdn.schoolloop.com/1709201436/static/lib/vex/vex-2.2.1/js/vex.combined.min.js"></script>
+        <script type="text/javascript" src="https://cdn.schoolloop.com/1709201436/static/lib/sl/accessible_dropdown.js"></script>
 
-        <script type="text/javascript" src="https://cdn.schoolloop.com/1701251047/static/lib/vex/vex-2.2.1/js/vex.combined.min.js"></script>
 
 
 
@@ -4015,8 +4014,15 @@ a.icon_block_delete:hover {background: #ffff99 url(/img/cms/icon_delete.gif) no-
 
 <meta name="robots" content="noindex">
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i|Roboto+Slab:100,300,400,700">
-<link rel="stylesheet" href="/css/shared.css">
+<!--
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i|Roboto+Slab:100,300,400,700" />
+<link rel="stylesheet" href="/css/shared.css" />
+-->
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i|Source+Sans+Pro:400,400i,700,700i" rel="stylesheet">
+<link rel="stylesheet" href="/custom-code/custom-header.css">
+<link rel="stylesheet" href="/custom-code/custom-header-override.css">
+
+<script src="/custom-code/custom-header.js"></script>
 </head>
 <body>
 <div id="skip">
@@ -4034,11 +4040,7 @@ a.icon_block_delete:hover {background: #ffff99 url(/img/cms/icon_delete.gif) no-
         <table cellpadding="0" cellspacing="0" class="header_table">
             <tbody><tr>
                <td>
-<a href="/">
-  <img src="/images/gladstone.png" width="150" alt="">
-  <h2>Gladstone High School</h2>
-  <p>Home of the Mighty Gladiators</p>
-</a>
+<h1>Gladstone High School</h1>
 </td>
              </tr>
 
@@ -4053,29 +4055,31 @@ a.icon_block_delete:hover {background: #ffff99 url(/img/cms/icon_delete.gif) no-
     <tbody><tr>
         <td width="100%">
             <ul>
-            <li><a href="/">Home</a></li>
+                <li>
+                    <a href="/">Home</a>
+                </li>
 
-
-                    <li class="section_1301752511171"><a href="/ghsgeneralinformation" rel="dropmenu1301752511171">Our School</a></li>
-
+                <li class="section_1301752511171">
+                    <a href="/ghsgeneralinformation" rel="dropmenu1301752511171">Our School</a>
+                </li>
                 
-
-                    <li class="section_1301752511172"><a href="/administration" rel="dropmenu1301752511172">Staff</a></li>
-
+                <li class="section_1301752511172">
+                    <a href="/administration" rel="dropmenu1301752511172">Staff</a>
+                </li>
                 
-
-                    <li class="section_1356612861714"><a href="/guidance" rel="dropmenu1356612861714">Guidance</a></li>
-
+                <li class="section_1356612861714">
+                    <a href="/guidance" rel="dropmenu1356612861714">Guidance</a>
+                </li>
                 
-
-                    <li class="section_1356612866386"><a href="/activities" rel="dropmenu1356612866386">Activities &amp; Athletics</a></li>
-
+                <li class="section_1356612866386">
+                    <a href="/activities" rel="dropmenu1356612866386">Activities &amp; Athletics</a>
+                </li>
                 
 
             </ul>
-      </td>
+        </td>
 
-          <td style="vertical-align: middle;">
+        <td style="vertical-align: middle;">
 <form method="POST" action="/search/search" style="margin: 0px 0px 0px 0px; padding: 5px 0px 0px 0px">
 <table cellpadding="1" cellspacing="0" style="width: 139px; float: right">
 <tbody><tr>
@@ -4091,107 +4095,109 @@ a.icon_block_delete:hover {background: #ffff99 url(/img/cms/icon_delete.gif) no-
 </tbody></table>
 
 </form>
-           </td>
+        </td>
     </tr>
-</tbody></table>
+    </tbody></table>
 </div>
 <div class="clear: both"></div>
 
 
-        <div id="dropmenu1301752511171" class="dropmenudiv_a" style="z-index: 5000">
+<div id="dropmenu1301752511171" class="dropmenudiv_a" style="z-index: 5000">
 
-                    <a href="/ghsgeneralinformation">Our School</a>
-            
-                    <a href="/handbook">Handbook &amp; Grad Requirements</a>
-            
-                    <a href="/medpathway">Medical Pathway</a>
-            
-                    <a href="/ecp">Early College Program</a>
-            
-                    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1391258371850">Nutrition Services</a>
-            
-                    <a href="/wasc">WASC</a>
-            
-                    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1487150174667">Sports Medicine</a>
-            
-        </div>
+    <a href="/ghsgeneralinformation">Our School</a>
     
-        <div id="dropmenu1301752511172" class="dropmenudiv_a" style="z-index: 5000">
+    <a href="/handbook">Handbook &amp; Grad Requirements</a>
+    
+    <a href="/medpathway">Medical Pathway</a>
+    
+    <a href="/ecp">Early College Program</a>
+    
+    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1391258371850">Nutrition Services</a>
+    
+    <a href="/wasc">WASC</a>
+    
+    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1501490954728">PBIS</a>
+    
+    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1487150174667">Sports Medicine</a>
+    
+</div>
+<div id="dropmenu1301752511172" class="dropmenudiv_a" style="z-index: 5000">
 
-                    <a href="/administration">Administration</a>
-            
-                    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1351934777452">Office Staff</a>
-            
-                    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1351934774797">Career/Tech Education</a>
-            
-                    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1351934773090">English Department</a>
-            
-                    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1351934774760">Fine Arts Department</a>
-            
-                    <a href="/md">Math Department</a>
-            
-                    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1351934773714">Physical Education Department</a>
-            
-                    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1351934774183">ROP Department</a>
-            
-                    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1351934773742">Science Department</a>
-            
-                    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1351934773899">Social Studies Department</a>
-            
-                    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1351934773435">Special Education Department</a>
-            
-                    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1351934774568">World Languages</a>
-            
-        </div>
+    <a href="/administration">Administration</a>
     
-        <div id="dropmenu1356612861714" class="dropmenudiv_a" style="z-index: 5000">
+    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1351934777452">Office Staff</a>
+    
+    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1351934774797">Career/Tech Education</a>
+    
+    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1351934773090">English Department</a>
+    
+    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1351934774760">Fine Arts Department</a>
+    
+    <a href="/md">Math Department</a>
+    
+    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1351934773714">Physical Education Department</a>
+    
+    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1351934774183">ROP Department</a>
+    
+    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1351934773742">Science Department</a>
+    
+    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1351934773899">Social Science Department</a>
+    
+    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1351934773435">Special Education Department</a>
+    
+    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1351934774568">World Languages</a>
+    
+</div>
+<div id="dropmenu1356612861714" class="dropmenudiv_a" style="z-index: 5000">
 
-                    <a href="/guidance">Guidance Info</a>
-            
-                    <a href="/guidancewelcome">Guidance Welcome &amp; Staff</a>
-            
-                    <a href="/awards.honors">Awards &amp; Honors</a>
-            
-                    <a href="/careers">Career Resources</a>
-            
-                    <a href="/collegeapps">College Applications</a>
-            
-                    <a href="/college">College Information</a>
-            
-                    <a href="/registration">Registration</a>
-            
-                    <a href="/scholarships">Scholarships</a>
-            
-                    <a href="/testprep">Test Prep</a>
-            
-                    <a href="/tutor">Tutoring</a>
-            
-                    <a href="/Volunteer">Volunteer Info and Internships</a>
-            
-        </div>
+    <a href="/guidance">Guidance Info</a>
     
-        <div id="dropmenu1356612866386" class="dropmenudiv_a" style="z-index: 5000">
+    <a href="/guidancewelcome">Guidance Welcome &amp; Staff</a>
+    
+    <a href="/awards.honors">Awards &amp; Honors</a>
+    
+    <a href="/careers">Career Resources</a>
+    
+    <a href="/collegeapps">College Applications</a>
+    
+    <a href="/college">College Information</a>
+    
+    <a href="/registration">Registration</a>
+    
+    <a href="/scholarships">Scholarships</a>
+    
+    <a href="/testprep">Test Prep</a>
+    
+    <a href="/tutor">Tutoring</a>
+    
+    <a href="/Volunteer">Volunteer Info</a>
+    
+</div>
+<div id="dropmenu1356612866386" class="dropmenudiv_a" style="z-index: 5000">
 
-                    <a href="/activities">Activities</a>
-            
-                    <a href="/athletics">Athletics</a>
-            
-                    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1378896666160">Gladiator Alliance Marching Band &amp; Colorguard</a>
-            
-                    <a href="/jrotc">U.S. ARMY JROTC 2016-2017</a>
-            
-                    <a href="/yearbook">Yearbook</a>
-            
-        </div>
+    <a href="/activities">Activities</a>
     
+    <a href="/athletics">Athletics</a>
+    
+    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1378896666160">Gladiator Alliance Marching Band &amp; Colorguard</a>
+    
+    <a href="/jrotc">U.S. ARMY JROTC 2017-2018</a>
+    
+    <a href="/yearbook">Yearbook</a>
+    
+</div>
+
 
 <script type="text/javascript">
-//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
-tabdropdown.init("public_main") ;
-jQuery(document).on("ready",function(){
-    jQuery(".section_1301752510365 a").addClass("current");
-})
-
+    //SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+    //tabdropdown.init("public_main") ;  // the 2007 dropdown code
+    jQuery(document).on("ready", function () {
+        jQuery(".section_1301752510365 a").addClass("current");
+        var options = {
+            oldStyleMenuId: "public_main"
+        }
+        new accessibleDropdown(options);
+    })
 </script>
 <a name="content" id="content"></a>
 
@@ -4224,12 +4230,12 @@ Homepage Main
 
         <tbody><tr>
                 <td nowrap="">
-                    <a title="Previous Month" class="icon_previous ajax_cal" href="/cms/month_accordion-d=x&amp;group_id=1301752510365&amp;month_id=1491894000000">&lt;&lt;</a>
+                    <a title="Previous Month" class="icon_previous ajax_cal" href="/cms/month_accordion-d=x&amp;group_id=1301752510365&amp;month_id=1503730800000">&lt;&lt;</a>
                 </td>
 
             <td style="padding-left: 10px; vertical-align:middle; text-align: left;">
 
-                    <div class="cal_month" style="width: 100%;">May &nbsp;2017</div>
+                    <div class="cal_month" style="width: 100%;">September &nbsp;2017</div>
             </td>
             <td style="text-align: right; padding-left: 5px;" class="no_wrap">
 
@@ -4245,7 +4251,7 @@ Homepage Main
               </div>
             </td>
            <td style="width: 25px; text-align: left; padding: 0px 5px; font-weight: bold; line-height: 12px; vertical-align: middle" nowrap="">
-               <a class="icon_next ajax_cal" title="Next Month" href="/cms/month_accordion-d=x&amp;group_id=1301752510365&amp;month_id=1497164400000">&gt;&gt;</a>
+               <a class="icon_next ajax_cal" title="Next Month" href="/cms/month_accordion-d=x&amp;group_id=1301752510365&amp;month_id=1509001200000">&gt;&gt;</a>
             </td>
 
         </tr>
@@ -4254,7 +4260,7 @@ Homepage Main
          </div>
 <table cellpadding="0" cellspacing="0" class="cal_table">
 <tbody><tr>
-    <td width="7"><img src="https://cdn.schoolloop.com/1701251047/img/spacer.gif" width="1" height="1" alt=""></td>
+    <td width="7"><img src="https://cdn.schoolloop.com/1709201436/img/spacer.gif" width="1" height="1" alt=""></td>
     <td align="center" class="cal_td_weekday" width="14%"><div class="cal_weekday">Sunday</div></td>
     <td align="center" class="cal_td_weekday" width="14%"><div class="cal_weekday">Monday</div></td>
     <td align="center" class="cal_td_weekday" width="14%"><div class="cal_weekday">Tuesday</div></td>
@@ -4266,105 +4272,80 @@ Homepage Main
 
 
 <tr>
-      <td style="height: 65px; text-align: right"><a href="/cms/week-d=x&amp;group_id=1301752510365&amp;week_id=1493535600000"><img src="https://cdn.schoolloop.com/1701251047/img/btn_cal_view_week.gif" alt="View Week"></a></td>
+      <td style="height: 65px; text-align: right"><a href="/cms/week-d=x&amp;group_id=1301752510365&amp;week_id=1503817200000"><img src="https://cdn.schoolloop.com/1709201436/img/btn_cal_view_week.gif" alt="View Week"></a></td>
 
     <td valign="top" class="cal_td"><div class="cal_day">
-            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1493535600000">
-               <span style="color : #595959;">30</span>
+            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1503817200000">
+               <span style="color : #595959;">27</span>
              </a>        </div>
 
-        <img src="https://cdn.schoolloop.com/1701251047/img/spacer.gif" width="10" height="20" alt="">            
+        <img src="https://cdn.schoolloop.com/1709201436/img/spacer.gif" width="10" height="20" alt="">            
 </td>
 
     <td valign="top" class="cal_td"><div class="cal_day">
-          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1493622000000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1493622000000&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1493622000000" name="Events Summary:">
+            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1503903600000">
+               <span style="color : #595959;">28</span>
+             </a>        </div>
+
+        <img src="https://cdn.schoolloop.com/1709201436/img/spacer.gif" width="10" height="20" alt="">            
+</td>
+
+    <td valign="top" class="cal_td"><div class="cal_day">
+            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1503990000000">
+               <span style="color : #595959;">29</span>
+             </a>        </div>
+
+        <img src="https://cdn.schoolloop.com/1709201436/img/spacer.gif" width="10" height="20" alt="">            
+</td>
+
+    <td valign="top" class="cal_td"><div class="cal_day">
+            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1504076400000">
+               <span style="color : #595959;">30</span>
+             </a>        </div>
+
+        <img src="https://cdn.schoolloop.com/1709201436/img/spacer.gif" width="10" height="20" alt="">            
+</td>
+
+    <td valign="top" class="cal_td"><div class="cal_day">
+            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1504162800000">
+               <span style="color : #595959;">31</span>
+             </a>        </div>
+
+        <img src="https://cdn.schoolloop.com/1709201436/img/spacer.gif" width="10" height="20" alt="">            
+</td>
+
+    <td valign="top" class="cal_td"><div class="cal_day">
+            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1504249200000">
                <span style="color : #000000;">1</span>
-            </a>        </div>
+             </a>        </div>
 
-
-            
-
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491561003394&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491561003394&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491561003394" name="Event Details">Grad Nite Tickets on Sale</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491561003371&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491561003371&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491561003371" name="Event Details">Senior Breakfast Tickets on Sale</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491468126426&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491468126426&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491468126426" name="Event Details">CASH ONLY FOR PURCHASES</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1493803094592&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1493803094592&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1493803094592" name="Event Details">AP Psychology Exam</a>
-</div>
-    </td>
+        <img src="https://cdn.schoolloop.com/1709201436/img/spacer.gif" width="10" height="20" alt="">            
+</td>
 
     <td valign="top" class="cal_td"><div class="cal_day">
-          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1493708400000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1493708400000&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1493708400000" name="Events Summary:">
+            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1504335600000">
                <span style="color : #000000;">2</span>
-            </a>        </div>
+             </a>        </div>
+
+        <img src="https://cdn.schoolloop.com/1709201436/img/spacer.gif" width="10" height="20" alt="">            
+</td>
 
 
-            
+  </tr>
 
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491561003395&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491561003395&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491561003395" name="Event Details">Grad Nite Tickets on Sale</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491468126427&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491468126427&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491468126427" name="Event Details">CASH ONLY FOR PURCHASES</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491561003372&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491561003372&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491561003372" name="Event Details">Senior Breakfast Tickets on Sale</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1493803094617&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1493803094617&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1493803094617" name="Event Details">AP Spanish Lang Exam</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1493803094626&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1493803094626&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1493803094626" name="Event Details">AP Art History Exam</a>
-</div>
-    </td>
+<tr>
+      <td style="height: 65px; text-align: right"><a href="/cms/week-d=x&amp;group_id=1301752510365&amp;week_id=1504422000000"><img src="https://cdn.schoolloop.com/1709201436/img/btn_cal_view_week.gif" alt="View Week"></a></td>
 
     <td valign="top" class="cal_td"><div class="cal_day">
-          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1493794800000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1493794800000&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1493794800000" name="Events Summary:">
+            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1504422000000">
                <span style="color : #000000;">3</span>
-            </a>        </div>
+             </a>        </div>
 
-
-            
-
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491561003396&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491561003396&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491561003396" name="Event Details">Grad Nite Tickets on Sale</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491468126428&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491468126428&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491468126428" name="Event Details">CASH ONLY FOR PURCHASES</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491561003373&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491561003373&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491561003373" name="Event Details">Senior Breakfast Tickets on Sale</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1493803094773&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1493803094773&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1493803094773" name="Event Details">Early Release Day</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1493803094645&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1493803094645&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1493803094645" name="Event Details">AP English Lit Exam</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1493803094782&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1493803094782&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1493803094782" name="Event Details">Montview League Senior Awards Night</a>
-</div>
-    </td>
+        <img src="https://cdn.schoolloop.com/1709201436/img/spacer.gif" width="10" height="20" alt="">            
+</td>
 
     <td valign="top" class="cal_td"><div class="cal_day">
-          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1493881200000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1493881200000&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1493881200000" name="Events Summary:">
+          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1504508400000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1504508400000&amp;return_url=1506459769350" class="slTooltip" data-additional-classes="calendar-tooltip" id="1504508400000" name="Events Summary:">
                <span style="color : #000000;">4</span>
             </a>        </div>
 
@@ -4372,301 +4353,128 @@ Homepage Main
             
 
      <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491468126429&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491468126429&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491468126429" name="Event Details">CASH ONLY FOR PURCHASES</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491561003374&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491561003374&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491561003374" name="Event Details">Senior Breakfast Tickets on Sale</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491561003397&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491561003397&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491561003397" name="Event Details">Grad Nite Tickets on Sale</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1493803094658&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1493803094658&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1493803094658" name="Event Details">AP US Govt &amp; Politics Exam</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1477297043480&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1477297043480&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1477297043480" name="Event Details">Coffee with the Principal</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1493803094795&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1493803094795&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1493803094795" name="Event Details">Achievers Senior Items @ Lunch</a>
+   <a href="/content/view-d=x&amp;id=1502181662254&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1502181662254&amp;return_url=1506459769350" class="slTooltip" data-additional-classes="calendar-tooltip" id="1502181662254" name="Event Details">Labor Day - No School</a>
 </div>
     </td>
 
     <td valign="top" class="cal_td"><div class="cal_day">
-          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1493967600000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1493967600000&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1493967600000" name="Events Summary:">
+            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1504594800000">
                <span style="color : #000000;">5</span>
-            </a>        </div>
+             </a>        </div>
 
-
-            
-
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491561003375&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491561003375&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491561003375" name="Event Details">Senior Breakfast Tickets on Sale</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491468126430&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491468126430&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491468126430" name="Event Details">CASH ONLY FOR PURCHASES</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491561003398&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491561003398&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491561003398" name="Event Details">Grad Nite Tickets on Sale</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1493803094667&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1493803094667&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1493803094667" name="Event Details">AP US History Exam</a>
-</div>
-    </td>
+        <img src="https://cdn.schoolloop.com/1709201436/img/spacer.gif" width="10" height="20" alt="">            
+</td>
 
     <td valign="top" class="cal_td"><div class="cal_day">
-            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1494054000000">
+            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1504681200000">
                <span style="color : #000000;">6</span>
              </a>        </div>
 
-        <img src="https://cdn.schoolloop.com/1701251047/img/spacer.gif" width="10" height="20" alt="">            
+        <img src="https://cdn.schoolloop.com/1709201436/img/spacer.gif" width="10" height="20" alt="">            
 </td>
 
-
-  </tr>
-
-<tr>
-      <td style="height: 65px; text-align: right"><a href="/cms/week-d=x&amp;group_id=1301752510365&amp;week_id=1494140400000"><img src="https://cdn.schoolloop.com/1701251047/img/btn_cal_view_week.gif" alt="View Week"></a></td>
-
     <td valign="top" class="cal_td"><div class="cal_day">
-            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1494140400000">
+            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1504767600000">
                <span style="color : #000000;">7</span>
              </a>        </div>
 
-        <img src="https://cdn.schoolloop.com/1701251047/img/spacer.gif" width="10" height="20" alt="">            
+        <img src="https://cdn.schoolloop.com/1709201436/img/spacer.gif" width="10" height="20" alt="">            
 </td>
 
     <td valign="top" class="cal_td"><div class="cal_day">
-          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1494226800000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1494226800000&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1494226800000" name="Events Summary:">
+            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1504854000000">
                <span style="color : #000000;">8</span>
-            </a>        </div>
-
-
-            
-
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491468126443&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491468126443&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491468126443" name="Event Details">CASH ONLY FOR PURCHASES</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491561003380&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491561003380&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491561003380" name="Event Details">Senior Breakfast Tickets on Sale</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491561003403&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491561003403&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491561003403" name="Event Details">Grad Nite Tickets on Sale</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1493803094676&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1493803094676&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1493803094676" name="Event Details">AP Biology Exam</a>
-</div>
-    </td>
-
-    <td valign="top" class="cal_td"><div class="cal_day">
-          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1494313200000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1494313200000&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1494313200000" name="Events Summary:">
-               <span style="color : #000000;">9</span>
-            </a>        </div>
-
-
-            
-
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491468126444&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491468126444&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491468126444" name="Event Details">CASH ONLY FOR PURCHASES</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491561003404&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491561003404&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491561003404" name="Event Details">Grad Nite Tickets on Sale</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491561003381&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491561003381&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491561003381" name="Event Details">Senior Breakfast Tickets on Sale</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1493803094685&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1493803094685&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1493803094685" name="Event Details">AP Calculus AB &amp; BC Exams</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1493803094694&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1493803094694&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1493803094694" name="Event Details">AP Spanish Lit Exam</a>
-</div>
-    </td>
-
-    <td valign="top" class="cal_td"><div class="cal_day">
-          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1494399600000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1494399600000&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1494399600000" name="Events Summary:">
-               <span style="color : #000000;">10</span>
-            </a>        </div>
-
-
-            
-
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491561003405&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491561003405&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491561003405" name="Event Details">Grad Nite Tickets on Sale</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491468126445&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491468126445&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491468126445" name="Event Details">CASH ONLY FOR PURCHASES</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491561003382&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491561003382&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491561003382" name="Event Details">Senior Breakfast Tickets on Sale</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1493803094703&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1493803094703&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1493803094703" name="Event Details">AP English Lang Exam</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1493803094712&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1493803094712&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1493803094712" name="Event Details">AP Macroeconomics Exam</a>
-</div>
-    </td>
-
-    <td valign="top" class="cal_td"><div class="cal_day">
-          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1494486000000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1494486000000&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1494486000000" name="Events Summary:">
-               <span style="color : #AA0000;">11</span>
-            </a>        </div>
-
-
-            
-
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491561003383&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491561003383&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491561003383" name="Event Details">Senior Breakfast Tickets on Sale</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491561003406&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491561003406&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491561003406" name="Event Details">Grad Nite Tickets on Sale</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491468126446&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491468126446&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491468126446" name="Event Details">CASH ONLY FOR PURCHASES</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1493803094721&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1493803094721&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1493803094721" name="Event Details">AP World History Exam</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1493803094840&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1493803094840&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1493803094840" name="Event Details">JROTC Awards Night</a>
-</div>
-    </td>
-
-    <td valign="top" class="cal_td"><div class="cal_day">
-          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1494572400000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1494572400000&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1494572400000" name="Events Summary:">
-               <span style="color : #000000;">12</span>
-            </a>        </div>
-
-
-            
-
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491561003407&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491561003407&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491561003407" name="Event Details">Grad Nite Tickets on Sale</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491561003384&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491561003384&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491561003384" name="Event Details">Senior Breakfast Tickets on Sale</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491468126447&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491468126447&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491468126447" name="Event Details">CASH ONLY FOR PURCHASES</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1493803094730&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1493803094730&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1493803094730" name="Event Details">AP Microeconomics Exam</a>
-</div>
-    </td>
-
-    <td valign="top" class="cal_td"><div class="cal_day">
-            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1494658800000">
-               <span style="color : #000000;">13</span>
              </a>        </div>
 
-        <img src="https://cdn.schoolloop.com/1701251047/img/spacer.gif" width="10" height="20" alt="">            
+        <img src="https://cdn.schoolloop.com/1709201436/img/spacer.gif" width="10" height="20" alt="">            
+</td>
+
+    <td valign="top" class="cal_td"><div class="cal_day">
+            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1504940400000">
+               <span style="color : #000000;">9</span>
+             </a>        </div>
+
+        <img src="https://cdn.schoolloop.com/1709201436/img/spacer.gif" width="10" height="20" alt="">            
 </td>
 
 
   </tr>
 
 <tr>
-      <td style="height: 65px; text-align: right"><a href="/cms/week-d=x&amp;group_id=1301752510365&amp;week_id=1494745200000"><img src="https://cdn.schoolloop.com/1701251047/img/btn_cal_view_week.gif" alt="View Week"></a></td>
+      <td style="height: 65px; text-align: right"><a href="/cms/week-d=x&amp;group_id=1301752510365&amp;week_id=1505026800000"><img src="https://cdn.schoolloop.com/1709201436/img/btn_cal_view_week.gif" alt="View Week"></a></td>
 
     <td valign="top" class="cal_td"><div class="cal_day">
-            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1494745200000">
-               <span style="color : #000000;">14</span>
+            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1505026800000">
+               <span style="color : #000000;">10</span>
              </a>        </div>
 
-        <img src="https://cdn.schoolloop.com/1701251047/img/spacer.gif" width="10" height="20" alt="">            
+        <img src="https://cdn.schoolloop.com/1709201436/img/spacer.gif" width="10" height="20" alt="">            
 </td>
 
     <td valign="top" class="cal_td"><div class="cal_day">
-          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1494831600000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1494831600000&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1494831600000" name="Events Summary:">
+            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1505113200000">
+               <span style="color : #000000;">11</span>
+             </a>        </div>
+
+        <img src="https://cdn.schoolloop.com/1709201436/img/spacer.gif" width="10" height="20" alt="">            
+</td>
+
+    <td valign="top" class="cal_td"><div class="cal_day">
+            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1505199600000">
+               <span style="color : #000000;">12</span>
+             </a>        </div>
+
+        <img src="https://cdn.schoolloop.com/1709201436/img/spacer.gif" width="10" height="20" alt="">            
+</td>
+
+    <td valign="top" class="cal_td"><div class="cal_day">
+            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1505286000000">
+               <span style="color : #000000;">13</span>
+             </a>        </div>
+
+        <img src="https://cdn.schoolloop.com/1709201436/img/spacer.gif" width="10" height="20" alt="">            
+</td>
+
+    <td valign="top" class="cal_td"><div class="cal_day">
+            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1505372400000">
+               <span style="color : #000000;">14</span>
+             </a>        </div>
+
+        <img src="https://cdn.schoolloop.com/1709201436/img/spacer.gif" width="10" height="20" alt="">            
+</td>
+
+    <td valign="top" class="cal_td"><div class="cal_day">
+            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1505458800000">
                <span style="color : #000000;">15</span>
-            </a>        </div>
+             </a>        </div>
 
-
-            
-
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491561003412&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491561003412&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491561003412" name="Event Details">Grad Nite Tickets on Sale</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491468126460&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491468126460&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491468126460" name="Event Details">CASH ONLY FOR PURCHASES</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491561003389&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491561003389&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491561003389" name="Event Details">Last Day to Purchase Senior Breakfast Tickets</a>
-</div>
-    </td>
+        <img src="https://cdn.schoolloop.com/1709201436/img/spacer.gif" width="10" height="20" alt="">            
+</td>
 
     <td valign="top" class="cal_td"><div class="cal_day">
-          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1494918000000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1494918000000&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1494918000000" name="Events Summary:">
+            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1505545200000">
                <span style="color : #000000;">16</span>
-            </a>        </div>
+             </a>        </div>
+
+        <img src="https://cdn.schoolloop.com/1709201436/img/spacer.gif" width="10" height="20" alt="">            
+</td>
 
 
-            
+  </tr>
 
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491561003421&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491561003421&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491561003421" name="Event Details">Grad Nite Tickets on Sale</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491468126461&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491468126461&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491468126461" name="Event Details">CASH ONLY FOR PURCHASES</a>
-</div>
-    </td>
+<tr>
+      <td style="height: 65px; text-align: right"><a href="/cms/week-d=x&amp;group_id=1301752510365&amp;week_id=1505631600000"><img src="https://cdn.schoolloop.com/1709201436/img/btn_cal_view_week.gif" alt="View Week"></a></td>
 
     <td valign="top" class="cal_td"><div class="cal_day">
-          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1495004400000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1495004400000&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1495004400000" name="Events Summary:">
+            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1505631600000">
                <span style="color : #000000;">17</span>
-            </a>        </div>
+             </a>        </div>
 
-
-            
-
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491561003422&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491561003422&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491561003422" name="Event Details">Grad Nite Tickets on Sale</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491468126462&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491468126462&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491468126462" name="Event Details">CASH ONLY FOR PURCHASES</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1493803094852&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1493803094852&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1493803094852" name="Event Details">Early Release Day</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491561003429&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491561003429&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491561003429" name="Event Details">Senior Awards Ceremony</a>
-</div>
-    </td>
+        <img src="https://cdn.schoolloop.com/1709201436/img/spacer.gif" width="10" height="20" alt="">            
+</td>
 
     <td valign="top" class="cal_td"><div class="cal_day">
-          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1495090800000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1495090800000&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1495090800000" name="Events Summary:">
+          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1505718000000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1505718000000&amp;return_url=1506459769350" class="slTooltip" data-additional-classes="calendar-tooltip" id="1505718000000" name="Events Summary:">
                <span style="color : #000000;">18</span>
             </a>        </div>
 
@@ -4674,55 +4482,50 @@ Homepage Main
             
 
      <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491561003423&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491561003423&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491561003423" name="Event Details">Grad Nite Tickets on Sale</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491468126463&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491468126463&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491468126463" name="Event Details">CASH ONLY FOR PURCHASES</a>
+   <a href="/content/view-d=x&amp;id=1502181662272&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1502181662272&amp;return_url=1506459769350" class="slTooltip" data-additional-classes="calendar-tooltip" id="1502181662272" name="Event Details">Staff Development Day - No School for Students</a>
 </div>
     </td>
 
     <td valign="top" class="cal_td"><div class="cal_day">
-          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1495177200000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1495177200000&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1495177200000" name="Events Summary:">
+            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1505804400000">
                <span style="color : #000000;">19</span>
+             </a>        </div>
+
+        <img src="https://cdn.schoolloop.com/1709201436/img/spacer.gif" width="10" height="20" alt="">            
+</td>
+
+    <td valign="top" class="cal_td"><div class="cal_day">
+          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1505890800000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1505890800000&amp;return_url=1506459769350" class="slTooltip" data-additional-classes="calendar-tooltip" id="1505890800000" name="Events Summary:">
+               <span style="color : #000000;">20</span>
             </a>        </div>
 
 
             
 
      <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491561003424&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491561003424&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491561003424" name="Event Details">Grad Nite Tickets on Sale</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491468126464&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491468126464&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491468126464" name="Event Details">CASH ONLY FOR PURCHASES</a>
+   <a href="/content/view-d=x&amp;id=1502181662013&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1502181662013&amp;return_url=1506459769350" class="slTooltip" data-additional-classes="calendar-tooltip" id="1502181662013" name="Event Details">Early Release Day</a>
 </div>
     </td>
 
     <td valign="top" class="cal_td"><div class="cal_day">
-            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1495263600000">
-               <span style="color : #000000;">20</span>
-             </a>        </div>
-
-        <img src="https://cdn.schoolloop.com/1701251047/img/spacer.gif" width="10" height="20" alt="">            
-</td>
-
-
-  </tr>
-
-<tr>
-      <td style="height: 65px; text-align: right"><a href="/cms/week-d=x&amp;group_id=1301752510365&amp;week_id=1495350000000"><img src="https://cdn.schoolloop.com/1701251047/img/btn_cal_view_week.gif" alt="View Week"></a></td>
-
-    <td valign="top" class="cal_td"><div class="cal_day">
-            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1495350000000">
+          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1505977200000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1505977200000&amp;return_url=1506459769350" class="slTooltip" data-additional-classes="calendar-tooltip" id="1505977200000" name="Events Summary:">
                <span style="color : #000000;">21</span>
-             </a>        </div>
+            </a>        </div>
 
-        <img src="https://cdn.schoolloop.com/1701251047/img/spacer.gif" width="10" height="20" alt="">            
-</td>
+
+            
+
+     <div class="school" style="font-size: 10px; font-weight: bold;">
+   <a href="/content/view-d=x&amp;id=1505206091816&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1505206091816&amp;return_url=1506459769350" class="slTooltip" data-additional-classes="calendar-tooltip" id="1505206091816" name="Event Details">Homecoming Rally</a>
+</div>
+    
+     <div class="school" style="font-size: 10px; font-weight: bold;">
+   <a href="/content/view-d=x&amp;id=1505206091830&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1505206091830&amp;return_url=1506459769350" class="slTooltip" data-additional-classes="calendar-tooltip" id="1505206091830" name="Event Details">Homecoming Game</a>
+</div>
+    </td>
 
     <td valign="top" class="cal_td"><div class="cal_day">
-          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1495436400000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1495436400000&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1495436400000" name="Events Summary:">
+          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1506063600000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1506063600000&amp;return_url=1506459769350" class="slTooltip" data-additional-classes="calendar-tooltip" id="1506063600000" name="Events Summary:">
                <span style="color : #000000;">22</span>
             </a>        </div>
 
@@ -4730,12 +4533,12 @@ Homepage Main
             
 
      <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491468126477&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491468126477&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491468126477" name="Event Details">CASH ONLY FOR PURCHASES</a>
+   <a href="/content/view-d=x&amp;id=1502181662263&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1502181662263&amp;return_url=1506459769350" class="slTooltip" data-additional-classes="calendar-tooltip" id="1502181662263" name="Event Details">Triad 1 Ends</a>
 </div>
     </td>
 
     <td valign="top" class="cal_td"><div class="cal_day">
-          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1495522800000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1495522800000&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1495522800000" name="Events Summary:">
+          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1506150000000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1506150000000&amp;return_url=1506459769350" class="slTooltip" data-additional-classes="calendar-tooltip" id="1506150000000" name="Events Summary:">
                <span style="color : #000000;">23</span>
             </a>        </div>
 
@@ -4743,89 +4546,63 @@ Homepage Main
             
 
      <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491468126478&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491468126478&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491468126478" name="Event Details">CASH ONLY FOR PURCHASES</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1493803094899&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1493803094899&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1493803094899" name="Event Details">Band End of the Year Concert</a>
+   <a href="/content/view-d=x&amp;id=1505206091851&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1505206091851&amp;return_url=1506459769350" class="slTooltip" data-additional-classes="calendar-tooltip" id="1505206091851" name="Event Details">Homecoming Dance</a>
 </div>
     </td>
-
-    <td valign="top" class="cal_td"><div class="cal_day">
-          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1495609200000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1495609200000&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1495609200000" name="Events Summary:">
-               <span style="color : #000000;">24</span>
-            </a>        </div>
-
-
-            
-
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491468126479&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491468126479&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491468126479" name="Event Details">CASH ONLY FOR PURCHASES</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1493803094909&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1493803094909&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1493803094909" name="Event Details">AVID Banquet</a>
-</div>
-    </td>
-
-    <td valign="top" class="cal_td"><div class="cal_day">
-          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1495695600000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1495695600000&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1495695600000" name="Events Summary:">
-               <span style="color : #000000;">25</span>
-            </a>        </div>
-
-
-            
-
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491468126480&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491468126480&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491468126480" name="Event Details">CASH ONLY FOR PURCHASES</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1493803094921&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1493803094921&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1493803094921" name="Event Details">Band Pop Concert</a>
-</div>
-    </td>
-
-    <td valign="top" class="cal_td"><div class="cal_day">
-          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1495782000000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1495782000000&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1495782000000" name="Events Summary:">
-               <span style="color : #000000;">26</span>
-            </a>        </div>
-
-
-            
-
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491468126481&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491468126481&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491468126481" name="Event Details">CASH ONLY FOR PURCHASES</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491561003434&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491561003434&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491561003434" name="Event Details">Senior Sunset</a>
-</div>
-    </td>
-
-    <td valign="top" class="cal_td"><div class="cal_day">
-            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1495868400000">
-               <span style="color : #000000;">27</span>
-             </a>        </div>
-
-        <img src="https://cdn.schoolloop.com/1701251047/img/spacer.gif" width="10" height="20" alt="">            
-</td>
 
 
   </tr>
 
 <tr>
-      <td style="height: 65px; text-align: right"><a href="/cms/week-d=x&amp;group_id=1301752510365&amp;week_id=1495954800000"><img src="https://cdn.schoolloop.com/1701251047/img/btn_cal_view_week.gif" alt="View Week"></a></td>
+      <td style="height: 65px; text-align: right"><a href="/cms/week-d=x&amp;group_id=1301752510365&amp;week_id=1506236400000"><img src="https://cdn.schoolloop.com/1709201436/img/btn_cal_view_week.gif" alt="View Week"></a></td>
 
     <td valign="top" class="cal_td"><div class="cal_day">
-            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1495954800000">
-               <span style="color : #000000;">28</span>
+            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1506236400000">
+               <span style="color : #000000;">24</span>
              </a>        </div>
 
-        <img src="https://cdn.schoolloop.com/1701251047/img/spacer.gif" width="10" height="20" alt="">            
+        <img src="https://cdn.schoolloop.com/1709201436/img/spacer.gif" width="10" height="20" alt="">            
 </td>
 
     <td valign="top" class="cal_td"><div class="cal_day">
-          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1496041200000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1496041200000&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1496041200000" name="Events Summary:">
+            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1506322800000">
+               <span style="color : #000000;">25</span>
+             </a>        </div>
+
+        <img src="https://cdn.schoolloop.com/1709201436/img/spacer.gif" width="10" height="20" alt="">            
+</td>
+
+    <td valign="top" class="cal_td"><div class="cal_day">
+            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1506409200000">
+               <span style="color : #AA0000;">26</span>
+             </a>        </div>
+
+        <img src="https://cdn.schoolloop.com/1709201436/img/spacer.gif" width="10" height="20" alt="">            
+</td>
+
+    <td valign="top" class="cal_td"><div class="cal_day">
+          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1506495600000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1506495600000&amp;return_url=1506459769350" class="slTooltip" data-additional-classes="calendar-tooltip" id="1506495600000" name="Events Summary:">
+               <span style="color : #000000;">27</span>
+            </a>        </div>
+
+
+            
+
+     <div class="school" style="font-size: 10px; font-weight: bold;">
+   <a href="/content/view-d=x&amp;id=1502181662022&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1502181662022&amp;return_url=1506459769350" class="slTooltip" data-additional-classes="calendar-tooltip" id="1502181662022" name="Event Details">Early Release Day</a>
+</div>
+    </td>
+
+    <td valign="top" class="cal_td"><div class="cal_day">
+            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1506582000000">
+               <span style="color : #000000;">28</span>
+             </a>        </div>
+
+        <img src="https://cdn.schoolloop.com/1709201436/img/spacer.gif" width="10" height="20" alt="">            
+</td>
+
+    <td valign="top" class="cal_td"><div class="cal_day">
+          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1506668400000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1506668400000&amp;return_url=1506459769350" class="slTooltip" data-additional-classes="calendar-tooltip" id="1506668400000" name="Events Summary:">
                <span style="color : #000000;">29</span>
             </a>        </div>
 
@@ -4833,94 +4610,17 @@ Homepage Main
             
 
      <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1470119073254&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1470119073254&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1470119073254" name="Event Details">Memorial Day - No School</a>
+   <a href="/content/view-d=x&amp;id=1505298730374&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1505298730374&amp;return_url=1506459769350" class="slTooltip" data-additional-classes="calendar-tooltip" id="1505298730374" name="Event Details">CSF Applications Due</a>
 </div>
     </td>
 
     <td valign="top" class="cal_td"><div class="cal_day">
-          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1496127600000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1496127600000&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1496127600000" name="Events Summary:">
+            <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1506754800000">
                <span style="color : #000000;">30</span>
-            </a>        </div>
+             </a>        </div>
 
-
-            
-
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491468126494&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491468126494&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491468126494" name="Event Details">CASH ONLY FOR PURCHASES</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1493803094940&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1493803094940&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1493803094940" name="Event Details">Junior Yearbook Distribution</a>
-</div>
-    </td>
-
-    <td valign="top" class="cal_td"><div class="cal_day">
-          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1496214000000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1496214000000&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1496214000000" name="Events Summary:">
-               <span style="color : #000000;">31</span>
-            </a>        </div>
-
-
-            
-
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491468126495&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491468126495&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491468126495" name="Event Details">CASH ONLY FOR PURCHASES</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1477297043793&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1477297043793&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1477297043793" name="Event Details">Parent Forum</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1493803094953&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1493803094953&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1493803094953" name="Event Details">Frosh/Soph Yearbook Distribution</a>
-</div>
-    </td>
-
-    <td valign="top" class="cal_td"><div class="cal_day">
-          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1496300400000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1496300400000&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1496300400000" name="Events Summary:">
-               <span style="color : #595959;">1</span>
-            </a>        </div>
-
-
-            
-
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491468126496&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491468126496&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491468126496" name="Event Details">CASH ONLY FOR PURCHASES</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1493803094989&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1493803094989&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1493803094989" name="Event Details">Senior Finals</a>
-</div>
-    </td>
-
-    <td valign="top" class="cal_td"><div class="cal_day">
-          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1496386800000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1496386800000&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1496386800000" name="Events Summary:">
-               <span style="color : #595959;">2</span>
-            </a>        </div>
-
-
-            
-
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1493803095002&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1493803095002&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1493803095002" name="Event Details">Senior Finals</a>
-</div>
-    
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1491468126497&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1491468126497&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1491468126497" name="Event Details">CASH ONLY FOR PURCHASES</a>
-</div>
-    </td>
-
-    <td valign="top" class="cal_td"><div class="cal_day">
-          <a href="/cms/day-d=x&amp;group_id=1301752510365&amp;day_id=1496473200000" hover_url="/calendar/day_compact?d=x&amp;group_id=1301752510365&amp;day_id=1496473200000&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1496473200000" name="Events Summary:">
-               <span style="color : #595959;">3</span>
-            </a>        </div>
-
-
-            
-
-     <div class="school" style="font-size: 10px; font-weight: bold;">
-   <a href="/content/view-d=x&amp;id=1493803095017&amp;group_id=1301752510365" hover_url="/calendar/view_compact?d=x&amp;id=1493803095017&amp;return_url=1494544862523" class="slTooltip" data-additional-classes="calendar-tooltip" id="1493803095017" name="Event Details">Band Banquet</a>
-</div>
-    </td>
+        <img src="https://cdn.schoolloop.com/1709201436/img/spacer.gif" width="10" height="20" alt="">            
+</td>
 
 
   </tr>
@@ -4934,7 +4634,7 @@ Homepage Main
 <div style="clear: both"></div>
 
         </div>
-        <img src="https://cdn.schoolloop.com/1701251047/img/spacer.gif" width="1" height="1" alt="">
+        <img src="https://cdn.schoolloop.com/1709201436/img/spacer.gif" width="1" height="1" alt="">
     </div>
 
     <div id="container_full_footer">
@@ -4944,7 +4644,7 @@ Homepage Main
        <tbody><tr>
         <td class="bottom" colspan="2">
        <div style="float: left; padding: 3px 5px 0px 0px">
-           <img src="https://cdn.schoolloop.com/1701251047/img/logo_footer_sl.gif" alt="School Loop Footer Logo">
+           <img src="https://cdn.schoolloop.com/1709201436/img/logo_footer_sl.gif" alt="School Loop Footer Logo">
        </div>
 
 

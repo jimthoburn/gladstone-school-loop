@@ -10,16 +10,29 @@ exports.HEAD_ELEMENT_HTML = `
 
 <meta name="robots" content="noindex" />
 
+<!--
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i|Roboto+Slab:100,300,400,700" />
 <link rel="stylesheet" href="/css/shared.css" />
+-->
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i|Source+Sans+Pro:400,400i,700,700i" rel="stylesheet" />
+<link rel="stylesheet" href="/custom-code/custom-header.css" />
+<link rel="stylesheet" href="/custom-code/custom-header-override.css">
+
+<script src="/custom-code/custom-header.js"></script>
 `;
 
+/*
 exports.LOGO_HTML = `
 <a href="/">
   <img src="/images/gladstone.png" width="150" alt="" />
   <h2>Gladstone High School</h2>
   <p>Home of the Mighty Gladiators</p>
 </a>
+`;
+*/
+
+exports.LOGO_HTML = `
+<h1>Gladstone High School</h1>
 `;
 
 exports.FOOTER_HTML = `
