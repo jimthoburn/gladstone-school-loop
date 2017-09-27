@@ -75,8 +75,10 @@
         return 'staff';
       } else if (titleHas('Our School')) {
         return 'about';
+      } else if (titleHas('Activities')) {
+        return 'activities';
       } else if (titleHas(
-                  'Activities',
+                  'Athletics'
                 )) {
         return 'athletics';
       } else {

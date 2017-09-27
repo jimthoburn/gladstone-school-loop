@@ -111,6 +111,11 @@
     background-position: center !important;
   }
 
+  .azusa-activities #container_header {
+    background-image: url(images/photos/aHR0cDovL2docy1hdXNkLWNhLnNjaG9vbGxvb3AuY29tL3VpbWcvaW1hZ2UvMTM1NjYxMjg2NjM4Ni8xMzQ1Mjc5MTU3MDQxLzE0ODU2ODI3NjUzMDQuanBnP2Nyb3BUb3A9MzMmY3JvcFJpZ2h0PTkwMCZjcm9wQm90dG9tPTYzMyZjcm9wTGVmdD0xMDAmYmFzaXNXaWR0aD0xMDAw.jpeg) !important;
+    background-position: center !important;
+  }
+
   .azusa-standards #container_header {
     background-image: url(images/students.jpg) !important;
     background-position: center !important;
