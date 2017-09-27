@@ -73,6 +73,8 @@
         return 'guidance';
       } else if (titleHas('Administration')) {
         return 'staff';
+      } else if (titleHas('Our School')) {
+        return 'about';
       } else if (titleHas(
                   'Activities',
                 )) {
