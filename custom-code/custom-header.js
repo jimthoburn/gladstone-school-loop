@@ -69,14 +69,8 @@
     }
 
     function getPageCategory(className) {
-      if (titleHas('Guidance')) {
-        return 'guidance';
-      } else if (titleHas('Administration')) {
-        return 'staff';
-      } else if (titleHas('Our School')) {
-        return 'about';
-      } else if (titleHas('Activities')) {
-        return 'activities';
+      if (titleHas('Activities')) {
+        return 'athletics';
       } else if (titleHas(
                   'Athletics'
                 )) {
